@@ -1,0 +1,45 @@
+Notas:
+Ao clicar no logo da loja retorna para Homepage 
+Menu abre no lado esquerdo da página com as secções dos artigos 
+Incluir os containers dor artigos com features 
+----------------------------------------------------------------------------------------------------------------------------------
+
+Nome da loja : ALTESC
+
+Artigos da loja = Videojogos :
+SECTIONS
+Jogos para as consolas = Video Games(PLAYSTATION(PS1/PS2/PS3/PS4/PS5/PS VITA); XBOX(XBOX/XBOX 360/XBOX ONE/XBOX SERIES X/S); PC/NINTENDO(NINTENDO 64/WII/WII U/NINTENDO SWITCH/GAMEBOY/GAMEGIRL) or Shop All 
+= POP FIGURES
+= ACESSÓRIOS,DEVICES(VR)
+= ROUPAS 
+= DIGITAL CARDS 
+
+
+
+
+
+Estrutura :
+
+* = prioridade 
+* = Primeira parte dar prioridade ao utilizador
+Segunda parte dar prioridade aos artigos  
+
+()Homepage com áreas de destaque de artigos * 1st
+()Página de lista de artigos 
+()Página de detalhe de artigo 
+()Área de registo de utilizador * 1st
+()Login de utilizador * 1st
+()Página de gestão da conta de utilizador *
+()Carrinho de compras com possibilidade de adição de artigos || adição comJavascript
+()Página de Checkout e pagamento de artigos 
+()Área(formulário) de recolha de opiniões 
+()Zona institucional com contactos, localização etc.. * NO FOOTER DA HOMEPAGE 1st
+
+
+
+
+
+
+
+
+
