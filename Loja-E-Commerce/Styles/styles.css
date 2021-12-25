@@ -1,12 +1,20 @@
-/* adicionar os estilos aqui */
 
-.box{
-  background-image: url(../Images/background.jpg);
-  padding: 100px;
-  margin: 100px;
-  background-size: 100%;
-  
+ /* * = Para todos os elementos */
+*{
+  margin: 0;
+  padding: 0;
 }
+
+.wrapper{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(80,218,168,1) 22%, rgba(60,112,134,1) 50%, rgba(6,19,133,1) 78%, rgba(6,20,139,1) 98%),url(../Images/background-gaming.jpeg);
+  background-position: center;
+  background-size: cover;
+  position:relative;
+
+}
+
 
 
 
