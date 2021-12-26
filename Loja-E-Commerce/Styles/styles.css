@@ -5,15 +5,26 @@
   padding: 0;
 }
 
-.wrapper{
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(180deg, rgba(80,218,168,1) 22%, rgba(60,112,134,1) 50%, rgba(6,19,133,1) 78%, rgba(6,20,139,1) 98%),url(../Images/background-gaming.jpeg);
+/* pseudo-classe */
+:root{
+  /* variáveis */
+  --primary: hsla(161, 82%, 48%, 0.60);
+  --secondary: hsla(210, 73%, 35%, 0.75);
+}
+
+.background-image{
+  background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+                    url("/Images/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
   background-position: center;
   background-size: cover;
-  position:relative;
-
+  background-repeat: no-repeat;
+  height: 100vh;
+  
 }
+ 
+/* navbar */
+
+
 
 
 
