@@ -1,1 +1,14 @@
-/* adicionar as fontes aqui  */
+
+
+/* para os items do header */
+/* Header da HomePage */
+
+.navbar a{
+    font-family: Arial;
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align:center
+}
+
+
