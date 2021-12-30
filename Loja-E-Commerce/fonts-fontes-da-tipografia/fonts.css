@@ -1,11 +1,9 @@
-/* estilo as fontes do link do header */
+/* import de fonte tipográfica via web fonts google */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-.header a{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-indent: -14px;
-    
+/* Fonts family para o site  */
+*{
+    font-family: 'Staatliches', cursive;
+    color:#35b79c;
 }
 

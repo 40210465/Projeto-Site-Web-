@@ -1,54 +1,35 @@
-
- /* * = Para todos os elementos*/
+/* Estilos Globais */
 *{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-}
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    
 
-html, body {
-  height:100%;
 }
-
-/* HEADER */
-.header{
-  overflow: hidden;
-  background-color: #1a1c53;
-  position: sticky;
-  position: -webkit-sticky;
-  top:0;
+/* BACKGROUND */
+    /* pseudo-classe para o linear gradient*/
+:root{
+    /* variáveis */
+    --primary: rgba(24, 172, 125, 0.363);
+    --secondary: hsla(210, 72%, 25%, 0.75);
+  }
   
-}
-/* estilo aos links do header */
-.header a{
-  float:right;
-  height:30px;
-  color: #35b79c;
-  text-align: center;
-  padding:32px;
-  text-decoration: none;
-  font-size: 20px;
-  line-height: 28px;
-  border-radius: 5px;
-}
+  .background-image{
+    height: 100%;
+    background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+                      url("/Images/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    
+  }
 
-/* Logo no Header */
-.logo img{
-  position:absolute;
-  float:left;
-  height:170px;
-  left:110px;
-  margin-top: -40px;
 
-}
 
-/* SIDEBAR */
-.sidebar{
-  height:820px;
-  width: 300px;
-  background-color: #1a1c53;
-}
+
 
 
 
