@@ -4,6 +4,44 @@
 /* Fonts family para o site  */
 *{
     font-family: 'Staatliches', cursive;
-    color:#35b79c;
+    font-size: 10px;
+    color:white;
+    
 }
+
+/* FONTES DA MENSAGEM DE WELCOME AO SITE */
+.text-layout h1{
+    font-size: 9rem;
+    margin: 2rem 0;
+    font-weight: bolder;
+   
+}
+                                             /* class="icon-ion-md-chatboxes"> */
+.text-layout h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+/* COMANDOS HAVE FUN */
+i{
+  font-size: 1.2em; 
+}
+
+/* FAQ */
+section a{
+    font-size: 1.7em;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

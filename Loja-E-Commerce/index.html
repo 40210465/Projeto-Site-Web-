@@ -7,29 +7,99 @@
     <!-- Noma da Loja -->
     <title>ALTESC | The Best Gaming Store for love gamers</title>
     <!--Styles do website -->
-    <link rel="stylesheet" href="/Styles/styles.css">
-    <link rel="stylesheet" href="fonts-fontes-da-tipografia/fonts.css">
-    <!-- link para elementos visuais CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../Loja-E-Commerce/Styles/styles.css">
+    <link rel="stylesheet" href="../Loja-E-Commerce/fonts-fontes-da-tipografia/fonts.css">
+    <!-- link para elementos visuais CSS icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <!-- scripts do website para interatividade do site -->
-    <script src="scripts/scripts.js"></script>
-   
+    <script src="../Loja-E-Commerce/scripts/scripts.js"></script>
 </head>
-
 <body>
-    <!-- background -->
-<div class="background-image"></div>
-<!-- Header navmenu -->
+    
+    <!-- NAVIGATION AREA MENU -->
+    <!-- HEADER MENU -->
 <header>
     <div class="container">
         <nav>
             <div class="menu-icons">
-                <i class="icon-md-menu"></i>
+                <i class="icon ion-md-menu"></i>
+                <i class="icon ion-md-close"></i>
             </div>
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                ALTESC
+            </a>
+            <ul class="nav-list">
+                <li>
+                    <a href="#HOMEPAGE">HOME</a>
+                </li>
+                <li>
+                    <!-- dropdown menu -->
+                    <a href="#HOMEPAGE">JOGOS
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    
+                    </a>
+                    <ul class="dropdown-sub-menu1">
+                        <!-- ITEMS DO SUB-MENU -->
+                        <li>
+                            <a href="#">PLAYSTATION</a>
+                        </li>
+                        <li>
+                            <a href="#">XBOX</a>
+                        </li>
+                        <li>
+                            <a href="#">PC</a>
+                        </li>
+                        <li>
+                            <a href="#">NINTENDO</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#HOMEPAGE">POP FIGURES</a>
+                </li>
+                <li>
+                    <!-- DROPDOWN MENU -->
+                    <a href="#HOMEPAGE">ACESSÓRIOS
+                        <i class="icon ion-md-arrow-dropdown"></i>
+                    </a>
+                    <ul class="dropdown-sub-menu2">
+                        <!-- ITEMS DO SUB-MENU -->
+                        <li>
+                            <a href="#">DUALSHOCKS</a>
+                        </li>
+                        <li>
+                            <a href="#">OCULOS VR</a>
+                        </li>
+                        <li>
+                            <a href="#">HEADPHONES</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#HOMEPAGE">DIGITAL CARDS</a>
+                </li>
+                <!-- ELEMENTOS SEPARADOS DOS RESTANTES -->
+                <li class="move-right hover btn">
+                    <a href="#HOMEPAGE">LOGIN</a>
+                </li>
+                <li class="move-right hover btn">
+                    <a href="#HOMEPAGE">REGISTER</a>
+                </li>
+            </ul>
+        
         </nav>
     </div>
 </header>
-   
+<!-- SECTION AREA DA HOMEPAGE DE INTRODUÇÃO COM BACKGROUND,MENSAGEM E FAQ -->
+  <section class="bg-image">
+      <div class="text-layout">
+          <h2> <i class="icon ion-logo-game-controller-b"></i> Have Fun <i class="icon ion-logo-game-controller-b"></i></h2>
+          <h1>ALTESC FOR LOVE GAMERS</h1>
+       <a href="#FAQ-OPINIÕES" class="button"></i>FAQ/OPINIÕES</a>
+      </div>
+  </section>
 
 </body>
 </html>
