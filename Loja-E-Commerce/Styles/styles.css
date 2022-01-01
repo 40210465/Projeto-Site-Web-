@@ -30,7 +30,7 @@
         
       }
     
-      /* ESTILO PARA MENSAGEM DE INTRODUÇÃO NA HOMEPAGE */
+      /* ESTILO PARA MENSAGEM NA HOMEPAGE DE INTRODUÇÃO */
       .text-layout{
           width: 100%;
           position:absolute;
@@ -40,7 +40,7 @@
           text-align: center;
       }
 
-      /* RESPONSIVIDADE A MENSAGEM DE INTRODUÇÃO NA HOMEPAGE */
+      /* RESPONSIVIDADE A MENSAGEM DE INTRODUÇÃO NA HOMEPAGE DE INTRODUÇÃO */
       
 @media screen and(max-width:830px){
     .text-layout h1{
@@ -50,7 +50,8 @@
           font-size: 1.2rem;
       }
     }
-
+    
+/* HEADER SECTION */
 /* ESTILOS AOS ITEMS DO HEADER NAV MENU */
 /* HEADER NAV */
 a{
@@ -141,7 +142,7 @@ section div {
     
 }
 
-/* ESTILOS AOS SUBMENUS */
+/* ESTILOS AOS SUBMENUS DO HEADER */
 
 .dropdown-sub-menu1{
     width:18rem;
@@ -163,7 +164,7 @@ section div {
     z-index: 100;
     top:16rem;
 }
-/* ESTILO PARA SETA NO SUB MENU1 */
+/* ESTILO PARA SETA NO SUB MENU1 DO HEADER */
 /* PARA CRIAR UM TRIÂNGULO NO SUBMENU1 */
 .dropdown-sub-menu1::before{
     content:"";
@@ -176,7 +177,7 @@ section div {
     transition: all 650ms ease;
 }
 
-/* ESTILO PARA SETA NO SUB MENU2 */
+/* ESTILO PARA SETA NO SUB MENU2 DO HEADER*/
 /* PARA CRIAR UM TRIÂNGULO NO SUBMENU2 */
 .dropdown-sub-menu2::before{
     content:"";
