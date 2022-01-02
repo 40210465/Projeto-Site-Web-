@@ -6,9 +6,7 @@
     font-family: 'Staatliches', cursive;
     font-size: 10px;
     color:white;
-    
 }
-
 /* FONTES DA MENSAGEM DE WELCOME AO SITE */
 .text-layout h1{
     font-size: 9rem;
@@ -31,6 +29,7 @@ i{
 section a{
     font-size: 1.7em;    
 }
+
 
 
 
