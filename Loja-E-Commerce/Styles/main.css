@@ -137,16 +137,13 @@ nav{
     color:#35b79c;
 }
 
-/* DEFINIR LAYOUT PARA AS MENSAGENS INTRODUÇÃO */
+/* DEFINIR LAYOUT PARA AS MENSAGENS INTRODUÇÃO DA MAIN SECTION */
 section div {
     padding:1.3rem;
     display: inline-block;
-    /* background-color:#35b79c; */
-    
 }
 
 /* ESTILOS AOS SUBMENUS DO HEADER */
-
 .dropdown-sub-menu1{
     width:15.4rem;
     display:block;
@@ -242,6 +239,7 @@ ul li .hover-digitalcards:hover {
     border-bottom: 4px solid #35b79c;
 }
 
+/* LAYTOUT MAIN SECTION */
 /* HOVER ANIMATION NAS MENSAGEMS ALTESC FOR FUN etc.. */
 
 h2:hover{
@@ -267,7 +265,7 @@ h1{
     color:#35b79c;
 }
 
-/* HOVER ANIMATIONS PARA SUB MENU 1 EXTRA CONTENT */
+/* HOVER ANIMATIONS PARA OS LINKS DOS SUB-MENUS */
 ul li .a:hover{
     color:white;
 }
@@ -302,12 +300,10 @@ footer{
     bottom: 0;
 }
 
-
-
 .footer{
     border-top: 14px solid #35b79c;
     border-bottom: 14px solid #35b79c;
-     background-color:rgba(255, 255, 255, 0.235);
+     background-color:rgba(255, 255, 255, 0);
     text-align: center;
     padding:6px;
     width: 100%;
@@ -322,6 +318,7 @@ footer h3{
 
 footer #left-content p{
     font-size:12px;
+    transition:2s;
 }
 
  footer i{
@@ -349,9 +346,6 @@ footer .ion-md-compass{
     color:#35b79c;
 }
 
-.al{
-   font-size:2em;
-}
 
 .ion-md-mail{
     font-size: 2em;
@@ -377,7 +371,7 @@ footer .ion-md-compass{
 }
 
 .ion-logo-facebook:hover{
-    color:#0b22d0;
+    color:	#4267B2;
 }
 
 .ion-logo-twitter:hover{
@@ -397,7 +391,7 @@ footer .ion-md-compass{
 }
 
 .ion-logo-playstation:hover{
-    color:blue;
+    color:rgb(29, 29, 157);
 }
 
 .ion-logo-windows:hover{
@@ -412,23 +406,79 @@ footer .ion-md-compass{
 }
 
 .mail i{
-    font-size:16px;
+    font-size:14px;
+    text-align: center;
+    transition:transform .2s;
 }
 
 .mail i:hover{
-  
+  font-size:30px;
+  border-top: 4px solid #35b79c;
+    border-bottom: 4px solid #35b79c;
+    color: #35b79c;
+    padding: 0 831px;
+    cursor: pointer;
 }
 
 
 .contact1 i{
-    padding: 0 871px;
-    color:red;
+    font-size:14px;
+    text-align: center;
+    transition:transform .2s;
 }
 
+.contact1 i:hover{
+    font-size:30px;
+    border-top: 4px solid #35b79c;
+      border-bottom: 4px solid #35b79c;
+      color: #35b79c;
+      padding: 0 831px;
+      cursor: pointer;
+  }
+
+
 .contact2 i{
-    padding: 0 871px;
-    color:red;
+    font-size:14px;
+    text-align: center;
+    transition:transform .2s;
 }
+
+.contact2 i:hover{
+    font-size:30px;
+    border-top: 4px solid #35b79c;
+      border-bottom: 4px solid #35b79c;
+      color: #35b79c;
+      padding: 0 831px;
+      cursor: pointer;
+  }
+
+  .rua i{
+      line-height:45px;
+      text-align: center;
+    font-size:14px;
+    transition:transform .2s;
+  }
+
+  .rua i:hover{
+    font-size:30px;
+    border-top: 4px solid #35b79c;
+      color: #35b79c;
+      padding: 0 790px;
+      cursor: pointer;
+  }
+/* ZOOM TEXT  ON HOVER */
+  #left-content p:hover{
+      color:#35b79c;
+      font-size:25px;
+      cursor: pointer;
+  }
+
+  
+
+
+
+    
+
     
 
 
