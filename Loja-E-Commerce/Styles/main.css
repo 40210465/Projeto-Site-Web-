@@ -26,8 +26,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        height: 100vh;
-        
+        height: 150vh;
       }
     
       /* ESTILO PARA MENSAGEM NA HOMEPAGE DE INTRODUÇÃO */
@@ -66,7 +65,6 @@ ul{
 header{
     width: 100%;
     position:absolute;
-    position:fixed;
     top: 0;
     left: 0;
 }
@@ -261,7 +259,6 @@ h2 i:hover{
 h1{
     background-color:rgba(255, 255, 255, 0.235);
     border-top: 12px solid #35b79c;
-    cursor: pointer;
     color: #35b79c;
 }
 
@@ -299,20 +296,150 @@ ul li .g:hover{
     color:white;
 }
 
-/* ESTILOS DO FOOTER*/
+/* FOOTER SECTION */
 footer{
     position:absolute;
+    bottom: 0;
+}
+
+
+
+.footer{
+    border-top: 14px solid #35b79c;
+    border-bottom: 14px solid #35b79c;
+     background-color:rgba(255, 255, 255, 0.235);
+    text-align: center;
+    padding:6px;
     width: 100%;
-    top:0;
-}
-h3{
-    font-size:25px;
+    bottom:-430px;
 }
 
-p{
-    font-size:25px;
+footer h3{
+    font-size:45px;
+    color:#35b79c;
+    
 }
 
-.ion-logo-facebook{
-    font-size:25px;
+footer #left-content p{
+    font-size:12px;
 }
+
+ footer i{
+    font-size: 45px;
+}
+
+footer .ion-md-compass{
+    font-size:2em;
+}
+
+.rua{
+    font-size:2em;
+}
+
+
+.copyright{
+    border-top: 4px solid #35b79c;
+    border-bottom: 4px solid #35b79c;
+    color:white;
+    font-size:1.5em;
+}
+
+.copyright:hover{
+    cursor:pointer;
+    color:#35b79c;
+}
+
+.al{
+   font-size:2em;
+}
+
+.ion-md-mail{
+    font-size: 2em;
+    
+}
+
+.ion-md-contact{
+    font-size:20px;
+}
+
+.num1{
+    font-size:20px;
+    
+}
+
+.num2{
+    font-size:20px;
+}
+
+.ion-logo-instagram:hover{
+    color:#C13584;
+    
+}
+
+.ion-logo-facebook:hover{
+    color:#0b22d0;
+}
+
+.ion-logo-twitter:hover{
+    color:#1DA1F2;
+}
+
+.ion-logo-youtube:hover{
+    color: rgb(196, 22, 22);
+}
+
+.ion-logo-twitch:hover{
+    color:rgb(135, 14, 135);
+}
+
+.ion-logo-xbox:hover{
+    color:#107C10;
+}
+
+.ion-logo-playstation:hover{
+    color:blue;
+}
+
+.ion-logo-windows:hover{
+    color:#1DA1F2;
+}
+
+.ion-logo-steam:hover{
+    color:black;
+}
+.ion-logo-apple:hover{
+    color:#808080;
+}
+
+.mail i{
+    font-size:16px;
+}
+
+.mail i:hover{
+  
+}
+
+
+.contact1 i{
+    padding: 0 871px;
+    color:red;
+}
+
+.contact2 i{
+    padding: 0 871px;
+    color:red;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
