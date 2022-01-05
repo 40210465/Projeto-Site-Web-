@@ -10,7 +10,7 @@
     
 }
 
-/* BACKGROUND */
+/* -------------------------------------------------BACKGROUND---------------------------------------------------------------------------------------------------- */
     /* pseudo-classe para o linear gradient*/
     :root{
         /* variáveis */
@@ -28,31 +28,8 @@
         background-attachment: fixed;
         height: 150vh;
       }
-    
-      /* ESTILO PARA MENSAGEM NA HOMEPAGE DE INTRODUÇÃO */
-      .text-layout{
-          width: 100%;
-          position:absolute;
-          top:50%;
-          left:50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-      }
 
-      /* RESPONSIVIDADE A MENSAGEM DE INTRODUÇÃO NA HOMEPAGE DE INTRODUÇÃO */
-      
-@media screen and(max-width:830px){
-    .text-layout h1{
-        font-size: 4rem;
-}
-      i{
-          font-size: 1.2rem;
-      }
-    }
-    
-/* HEADER SECTION */
-/* ESTILOS AOS ITEMS DO HEADER NAV MENU */
-/* HEADER NAV */
+/* -----------------------------------------------------HEADER SECTION -----------------------------------------------------------*/
 a{
 text-decoration: none;
 }
@@ -61,7 +38,6 @@ ul{
     list-style: none;
 }
 
-/* HEADER SECTION */
 header{
     width: 100%;
     position:absolute;
@@ -73,22 +49,12 @@ div .container{
     width: 100%;
     max-width: 117rem;
     margin: 0 auto;
-    padding: 0 1.3rem;
+    padding: 0 3.3rem;
 }
 
-.menu-icons{
-    font-size: 4rem;
-    position:absolute;
-    top:50%;
-    right: 2rem;
-    transform: translateY(-50%);
-    cursor:pointer;
-    z-index: 1500;
-    display:none;
-    
-}
 
-nav{
+
+div.container{
     display:flex;
     align-items: center;
     width: 100%;
@@ -101,28 +67,26 @@ nav{
     width: 45rem;
     height: 6rem;
     font-size: 50px;
-    margin-right: 12px;
-    margin-right: 8rem;
     color:#35b79c;
-    padding:8px;
-    line-height: 5rem;
+    padding:0 98px;
+    line-height: 6.5rem;
     
 }
 
-.nav-list{
+.header-list{
     display:flex;
     width: 100%;;
     align-items: center;
-
+    padding: 0 450px;
 }
 
-.nav-list  li{
+.header-list  li{
     line-height: 6rem;
     position:relative;
 }
 
 
-.nav-list a{
+.header-list a{
     display:block;
     color: #eee;
     padding:0 4.9rem;
@@ -132,65 +96,10 @@ nav{
    
 }
 
-/* COM EFEITO HOVER PSEUDO-CLASSE */
-.nav-list a:hover{
-    color:#35b79c;
-}
-
-/* DEFINIR LAYOUT PARA AS MENSAGENS INTRODUÇÃO DA MAIN SECTION */
-section div {
-    padding:1.3rem;
-    display: inline-block;
-}
-
-/* ESTILOS AOS SUBMENUS DO HEADER */
-.dropdown-sub-menu1{
-    width:15.4rem;
-    display:block;
-    position:absolute;
-    border-top: 5px solid #35b79c;
-    background-color: rgba(255, 255, 255, 0.235);
-    z-index: 100;
-    top:16rem;
-    opacity: 0;
-    visibility: hidden;    
-}
-
-.dropdown-sub-menu2{
-    width:19.3rem;
-    display:block;
-    position:absolute;
-    border-top: 3px solid #35b79c;
-    background-color: rgba(255, 255, 255, 0.235);
-    z-index: 100;
-    top:16rem;
-    opacity: 0;
-    visibility: hidden;
-}
-
-/* Quando der hover o submenu 1 faz dropdown */
-.nav-list li:hover  .dropdown-sub-menu1{
-    top: 6.5rem;
-    opacity: 1;
-    visibility:visible;
-}
-/* Quando der hover o submenu 2 faz dropdown */
-.nav-list li:hover  .dropdown-sub-menu2{
-    top: 6.5rem;
-    opacity: 1;
-    visibility:visible;
-}
-/* Estilos dos links do HEADER NAV MENU */
-li .destaques-btn{
-    background-color:rgba(255, 255, 255, 0.235);
-    border-top: 14px solid #35b79c;
-}
-
-
 li .login-btn{
     background-color:rgba(255, 255, 255, 0.235);
     border-top: 14px solid #35b79c;
-    border-right: 4px solid #35b79c;
+  
 }
 
 li .register-btn{
@@ -198,45 +107,46 @@ li .register-btn{
     border-top: 14px solid #35b79c;
 }
 
-/* HOVER ANIMATION PARA O HEADER NAV MENU */
-  ul li .hover-jogos:hover {
-    background-color:rgba(255, 255, 255, 0.235);
-    border-top: 14px solid #35b79c;
-   
+li .login-btn:hover{
+    border-top: 14px solid white;
 }
 
-ul li .hover-pop-figures:hover {
-    background-color:rgba(255, 255, 255, 0.235);
-    border-top: 14px solid #35b79c;
-   
+li .register-btn:hover{
+    border-top: 14px solid white;
 }
 
-ul li .hover-acessorios:hover {
-    background-color:rgba(255, 255, 255, 0.235);
-    border-top: 14px solid #35b79c;
-   
+
+/* -------------------------------------------------MAIN SECTION----------------------------------------------*/
+.text-layout{
+    width: 100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-ul li .hover-digitalcards:hover {
-    background-color:rgba(255, 255, 255, 0.235);
-    border-top: 14px solid #35b79c;
-    border-right: 4px solid #35b79c;
-   
+/* RESPONSIVIDADE A MENSAGEM DE INTRODUÇÃO DO LOBBY DO SITE */
+
+@media screen and(max-width:830px){
+.text-layout h1{
+  font-size: 4rem;
+}
+i{
+    font-size: 1.2rem;
+}
 }
 
-/*HOVER ANIMATIONS para OS SUB MENUS */
-/* SUB-MENU1 */
 
-.dropdown-sub-menu1 a:hover{
-    background-color:rgba(255, 255, 255, 0.235);
-    border-top: 4px solid #35b79c;
-    border-bottom: 4px solid #35b79c;
+/* COM EFEITO HOVER PSEUDO-CLASSE */
+.header-list a:hover{
+    color:#35b79c;
 }
-/* SUB-MENU2 */
-.dropdown-sub-menu2 a:hover{
-    background-color:rgba(255, 255, 255, 0.235);
-    border-top: 4px solid #35b79c;
-    border-bottom: 4px solid #35b79c;
+
+
+section div {
+    padding:1.3rem;
+    display: inline-block;
 }
 
 /* LAYTOUT MAIN SECTION */
@@ -265,36 +175,7 @@ h1{
     color:#35b79c;
 }
 
-/* HOVER ANIMATIONS PARA OS LINKS DOS SUB-MENUS */
-ul li .a:hover{
-    color:white;
-}
-
-ul li .b:hover{
-    color:white;
-}
-
-ul li .c:hover{
-    color:white;
-}
-
-ul li .d:hover{
-    color:white;
-}
-
-ul li .e:hover{
-    color:white;
-}
-
-ul li .f:hover{
-    color:white;
-}
-
-ul li .g:hover{
-    color:white;
-}
-
-/* FOOTER SECTION */
+/* -----------------------------------------------------------FOOTER SECTION-------------------------------------------------------------------------------------- */
 footer{
     position:absolute;
     bottom: 0;
@@ -474,22 +355,3 @@ footer .ion-md-compass{
   }
 
   
-
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
