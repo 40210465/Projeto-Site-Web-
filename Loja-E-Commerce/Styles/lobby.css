@@ -21,7 +21,11 @@
       .bg-image{
         height: 100%;
         background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+<<<<<<< HEAD
                           url("../Images/BACKGROUND/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
+=======
+                          url("../Images/SITE/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
+>>>>>>> 1e51c268c6a5af05ce04fc9ff24164a273d7c348
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
