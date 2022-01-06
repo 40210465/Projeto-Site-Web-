@@ -81,7 +81,7 @@ div.container{
 }
 
 .header-list  li{
-    line-height: 2rem;
+    line-height: rem;
     position:relative;
 }
 
@@ -361,12 +361,35 @@ footer .ion-md-compass{
   /* Height = 753px =  */
   
   @media screen and (max-width:1536px) {
+    .bg-image{
+        height: 165vh;
+    }
+    .mail i:hover{
+          padding: 0 649px;
+      }
+      .rua i:hover{
+          padding: 0 608px;
+       
+      }
+      .contact1 i:hover{
+          padding: 0 665px;
+      }
+      .contact2 i:hover{
+          padding: 0 660px;
+      }
+
+      .header-list{
+        padding: 0 317px;
+        line-height:57px;
+       
+    }
     .header-list a{
         display:block;
-        padding:0 1.9rem;
+        padding:0 3.0rem;
         font-size:1.9rem;
         text-transform: uppercase;
         transition: color 250ms;
-       
     }
+      
+
   }
