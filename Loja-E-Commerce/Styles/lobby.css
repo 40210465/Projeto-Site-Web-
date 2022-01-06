@@ -95,9 +95,7 @@ div.container{
    
 }
 
-#header-list a{
-    padding: 0 120px;
-}
+
 
 li .login-btn{
     background-color:rgba(255, 255, 255, 0.235);
@@ -366,17 +364,17 @@ footer .ion-md-compass{
         height: 165vh;
     }
     .mail i:hover{
-          padding: 0 349px;
+          padding: 0 449px;
       }
       .rua i:hover{
-          padding: 0 308px;
+          padding: 0 408px;
        
       }
       .contact1 i:hover{
-          padding: 0 365px;
+          padding: 0 465px;
       }
       .contact2 i:hover{
-          padding: 0 360px;
+          padding: 0 460px;
       }
 
       .header-list{
