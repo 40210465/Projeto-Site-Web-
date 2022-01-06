@@ -81,7 +81,7 @@ div.container{
 }
 
 .header-list  li{
-    line-height: 6rem;
+    line-height: 2rem;
     position:relative;
 }
 
@@ -354,8 +354,19 @@ footer .ion-md-compass{
       cursor: pointer;
   }
 
-  /* ---------------------------------------------MEDIA QUERIES PARA RESOLUÇÃO DO PORTÁTIL------------------------------------------------------------------------------------------------------- */
+  /* ---------------------------------------------MEDIA QUERIES PARA RESOLUÇÃO DO PORTÁTIL------------------------------------------------------------------------------------------------------------ */
 
-
+/* 1536px 753.60 */
+  /* Width = 1536px */
+  /* Height = 753px =  */
   
-  
+  @media screen and (max-width:1536px) {
+    .header-list a{
+        display:block;
+        padding:0 1.9rem;
+        font-size:1.9rem;
+        text-transform: uppercase;
+        transition: color 250ms;
+       
+    }
+  }
