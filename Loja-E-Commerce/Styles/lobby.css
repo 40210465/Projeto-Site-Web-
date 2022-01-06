@@ -76,8 +76,7 @@ div.container{
 .header-list{
     display:flex;
     width: 100%;;
-    align-items: center;
-    padding: 0 450px;
+    padding: 0 460px;
 }
 
 .header-list  li{
@@ -94,6 +93,10 @@ div.container{
     text-transform: uppercase;
     transition: color 250ms;
    
+}
+
+#header-list a{
+    padding: 0 120px;
 }
 
 li .login-btn{
@@ -355,27 +358,25 @@ footer .ion-md-compass{
   }
 
   /* ---------------------------------------------MEDIA QUERIES PARA RESOLUÇÃO DO PORTÁTIL------------------------------------------------------------------------------------------------------------ */
-
-/* 1536px 753.60 */
-  /* Width = 1536px */
-  /* Height = 753px =  */
+  /* Width = 1920px */
+  /* Height = 1080px =  */
   /*  */
-  @media screen and (max-width:1536px) {
+  @media screen and (max-width:1920px) {
     .bg-image{
         height: 165vh;
     }
     .mail i:hover{
-          padding: 0 649px;
+          padding: 0 349px;
       }
       .rua i:hover{
-          padding: 0 608px;
+          padding: 0 308px;
        
       }
       .contact1 i:hover{
-          padding: 0 665px;
+          padding: 0 365px;
       }
       .contact2 i:hover{
-          padding: 0 660px;
+          padding: 0 360px;
       }
 
       .header-list{
@@ -393,3 +394,4 @@ footer .ion-md-compass{
       
 
   }
+
