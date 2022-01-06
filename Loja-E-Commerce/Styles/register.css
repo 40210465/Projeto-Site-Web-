@@ -1,0 +1,92 @@
+/* Paramêtros Globais */
+/* Seletor Global */
+/* selector global para impactar o documento todo   */
+*,
+*::before,
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* ----------------------------------------BACKGROUND--------------------------------------------------- */
+    /* pseudo-classe para o linear gradient*/
+    :root{
+        /* variáveis */
+        --primary: rgba(12, 87, 49, 0.568);
+        --secondary: hsla(210, 79%, 27%, 0.75);
+      }
+      
+      .bg-image{
+        height: 100%;
+        background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+                          url("../Images/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 220vh;
+      }
+
+     /* ------------------------MAIN SECTION----------------------------------------------------------------
+           --------------------REGISTER FORM--------------------------------------------- */
+                        /* Design dos inputs  */
+main{
+   width:320;
+   height:420px;
+   top:50%;
+   left: 50%;
+   position:absolute;
+   transform:translate(-50%,-22%);
+   
+}
+
+form{
+    background-color: rgba(10, 7, 7, 0.2);
+    width: 100%;
+    max-width:500px;
+    margin:32px auto;
+    padding:32px 64px;
+    line-height: 2.1em;
+   
+}
+
+div .inputfield{
+    margin-bottom: 24px;
+    position:relative;
+}
+
+input{
+ width: 100%;
+ padding: 16px 0;
+ border: none;
+ border-bottom: 4px solid #35b79c;
+ background-color: transparent;
+ outline:none;
+}
+
+input{
+position:relative;
+transition: .4s;
+
+}
+
+input:focus
+{
+    /* para alterar o posicionament na verticaL dos inputs no eixo Y*/
+    transform:translateY(-24px);
+    background-color: white;  
+
+}
+
+input:hover{
+    transform:translateY(-24px);
+    background-color: white;  
+
+}
+
+
+
+
+

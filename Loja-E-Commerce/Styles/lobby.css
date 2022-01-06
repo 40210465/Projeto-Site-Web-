@@ -1,6 +1,6 @@
 /* Paramêtros Globais */
 /* Seletor Global */
-/* Selecionar globalmente Before After para estilo */
+/* selector global para impactar o documento todo   */
 *,
 *::before,
 *::after{
@@ -145,7 +145,7 @@ i{
 
 
 section div {
-    padding:1.3rem;
+    padding:1;
     display: inline-block;
 }
 
