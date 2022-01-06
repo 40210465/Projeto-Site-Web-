@@ -3,61 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Registo</title>
-    <link rel="stylesheet" href="">
     <meta name="Registo" content="width=device-width, initial-scale=1.0">
+    <title>ALTESC | REGISTO</title>
+    <!-- Styles register para o register form -->
+    <link rel="stylesheet" href="/Loja-E-Commerce/Styles/register.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Loja-E-Commerce/fonts-fontes-da-tipografia/register-fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="/Loja-E-Commerce/scripts/register.js"></script>
     <title>Register</title>
 </head>
 <body>
+   
     
-<div class="wrapper">
-    <div class="title">
-        Registo
-    </div>
-    <div class="form">
-       <div class="inputfield">
-          <label>Primeiro Nome</label>
-          <input type="text" class="input">
-       </div>  
-        <div class="inputfield">
-          <label>Últino Nome</label>
-          <input type="text" class="input">
-       </div>  
-       <div class="inputfield">
-          <label>Password</label>
-          <input type="password" class="input">
-       </div>  
-      <div class="inputfield">
-          <label>Confirme Password</label>
-          <input type="password" class="input">
-       </div>  
-        <div class="inputfield">
-          <label>Email</label>
-          <input type="text" class="input">
-       </div> 
-      <div class="inputfield">
-          <label>Número de Telefone</label>
-          <input type="text" class="input">
-       </div> 
-      <div class="inputfield">
-          <label>Endereço</label>
-          <textarea class="textarea"></textarea>
-       </div> 
-      <div class="inputfield">
-          <label>Código Postal</label>
-          <input type="text" class="input">
-       </div> 
-      <div class="inputfield terms">
-            <label>
-                <p>Aceito os termos e condições</p>
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-       </div> 
-      <div class="inputfield">
-        <input type="submit" value="Register" class="btn">
-      </div>
-    </div>
-</div>		
+    <!-- BACKGROUND SECTION -->
+    <div class="bg-image"></div>
+    <!--MAIN SECTION COM O REGISTER FORM -->
+    <main id="register-form" class="register-form">
+        <form action="/Loja-E-Commerce/Navigation-Area/Shop-artigos/destaques.html">
+
+         <div class="wrapper">
+             <div class="form">
+                <div class="inputfield-fname">
+                   <input type="text" placeholder="Primeiro Nome" class="input" required>
+                </div>  
+                 <div class="inputfield-lname">
+                   <input type="text" placeholder="Último Nome" class="input" required>
+                </div>  
+                <div class="inputfield-psw">
+                   <input type="password" placeholder="Password"show="*" value="" id="showPsw" required>
+                   <div class="show password">
+                        <input type="checkbox" onclick="showPassword()">&ensp;<span class="showpsw">show password</span>
+                   </div>
+                </div>  
+               <div class="inputfield-confirmpsw">
+                   <input type="password" placeholder="Confirme Password" show="*" value="" id="confirmeshowPsw" required>
+                   <div class="confirme-psw">
+                        <input type="checkbox" onclick="confirmeshowPassword()">&ensp;<span class="showpsw">show password</span>
+                   </div>
+                </div>  
+                 <div class="inputfield">
+                   <input type="text" placeholder="Email"  required>
+                </div> 
+               <div class="inputfield">
+                   <input type="text" placeholder="Contacto" class="input" required>
+                </div> 
+               <div class="inputfield">
+                   <input type="text" placeholder="Endereço" class="input" required>
+                </div> 
+               <div class="inputfield">
+                   <input type="text" placeholder="Código Postal" class="input" required>
+                </div> 
+               <div class="inputfield">              
+                        <input type="checkbox">&ensp;<span>Aceito os termos e condições</span>
+                </div> 
+               <div class="btn">
+                 <input type="submit" value="Register" class="btn">
+               </div>
+             </div>
+         </div>		
+        </form>
+    </main>
+    
 </body>
 </html>

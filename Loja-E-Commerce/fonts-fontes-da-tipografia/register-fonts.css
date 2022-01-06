@@ -1,0 +1,17 @@
+/* import de fonte tipográfica via web fonts google */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* Fonts family para o site  */
+*{
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    color:white;
+}
+
+input{
+color:black;
+}
+
+.showpsw{
+    font-size: 15px;
+}
