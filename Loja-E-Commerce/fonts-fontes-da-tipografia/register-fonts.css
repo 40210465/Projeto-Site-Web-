@@ -9,9 +9,13 @@
 }
 
 input{
-color:black;
+color:#35b79c;
 }
 
 .showpsw{
     font-size: 15px;
+}
+
+.btn{
+    color:aliceblue;
 }

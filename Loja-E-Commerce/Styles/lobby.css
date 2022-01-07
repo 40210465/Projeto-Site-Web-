@@ -21,7 +21,7 @@
       .bg-image{
         height: 100%;
         background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
-                          url("../Images/SITE/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
+                          url("../Images/BACKGROUND/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -76,12 +76,11 @@ div.container{
 .header-list{
     display:flex;
     width: 100%;;
-    align-items: center;
-    padding: 0 450px;
+    padding: 0 460px;
 }
 
 .header-list  li{
-    line-height: 6rem;
+    line-height: rem;
     position:relative;
 }
 
@@ -95,6 +94,8 @@ div.container{
     transition: color 250ms;
    
 }
+
+
 
 li .login-btn{
     background-color:rgba(255, 255, 255, 0.235);
@@ -354,4 +355,41 @@ footer .ion-md-compass{
       cursor: pointer;
   }
 
-  
+  /* ---------------------------------------------MEDIA QUERIES PARA RESOLUÇÃO DO PORTÁTIL------------------------------------------------------------------------------------------------------------ */
+  /* Width = 1920px */
+  /* Height = 1080px =  */
+  /*  */
+  @media screen and (max-width:1920px) {
+    .bg-image{
+        height: 165vh;
+    }
+    .mail i:hover{
+          padding: 0 449px;
+      }
+      .rua i:hover{
+          padding: 0 438px;
+       
+      }
+      .contact1 i:hover{
+          padding: 0 495px;
+      }
+      .contact2 i:hover{
+          padding: 0 470px;
+      }
+
+      .header-list{
+        padding: 0 317px;
+        line-height:57px;
+       
+    }
+    .header-list a{
+        display:block;
+        padding:0 3.0rem;
+        font-size:1.9rem;
+        text-transform: uppercase;
+        transition: color 250ms;
+    }
+      
+
+  }
+
