@@ -32,25 +32,4 @@
 //  limpa as intruções todas e deixa só os comentários no código, naquilo que fores fazer 
 
 
-// função que permite mostrar os caracteres introduzidos pelo o user e que por sua vez é invocada ao clicar no botão
-function showPassword() {
-    var x = document.getElementById("showPsw");
-    if (x.type === "password"){
-        x.type = "text";
-    } else {
-        x.type = "password";
-    }
-}
-
-// função que permite mostrar os caracteres introduzidos pelo o user e que por sua vez é invocada ao clicar no botão
-function confirmeshowPassword() {
-    var x = document.getElementById("confirmeshowPsw");
-    if(x.type === "password"){
-        x.type = "text";
-    } else{
-        x.type = "password";
-    }
-}
-
-
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,60 +13,56 @@
     <link rel="stylesheet" href="/Loja-E-Commerce/fonts-fontes-da-tipografia/register-fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="/Loja-E-Commerce/scripts/login.js"></script>
-    <title>Register</title>
+    <script src="../scripts/register.js"></script>
+
 </head>
+
 <body>
-   
-    
+
+
     <!-- BACKGROUND SECTION -->
     <div class="bg-image"></div>
     <!--MAIN SECTION COM O REGISTER FORM -->
     <main id="register-form" class="register-form">
         <form action="/Loja-E-Commerce/Navigation-Area/Shop-artigos/destaques.html">
-
-         <div class="wrapper">
-             <div class="form">
-                <div class="inputfield-fname">
-                   <input type="text" placeholder="Primeiro Nome" class="input" required>
-                </div>  
-                 <div class="inputfield-lname">
-                   <input type="text" placeholder="Último Nome" class="input" required>
-                </div>  
-                <div class="inputfield-psw">
-                   <input type="password" placeholder="Password"show="*" value="" id="showPsw" required>
-                   <div class="show password">
-                        <input type="checkbox" onclick="showPassword()">&ensp;<span class="showpsw">show password</span>
-                   </div>
-                </div>  
-               <div class="inputfield-confirmpsw">
-                   <input type="password" placeholder="Confirme Password" show="*" value="" id="confirmeshowPsw" required>
-                   <div class="confirme-psw">
-                        <input type="checkbox" onclick="confirmeshowPassword()">&ensp;<span class="showpsw">show password</span>
-                   </div>
-                </div>  
-                 <div class="inputfield"> 
-                   <input type="text" placeholder="Email"  required>
-                </div> 
-               <div class="inputfield">
-                   <input type="text" placeholder="Contacto" class="input" required>
-                </div> 
-               <div class="inputfield">
-                   <input type="text" placeholder="Endereço" class="input" required>
-                </div> 
-               <div class="inputfield">
-                   <input type="text" placeholder="Código Postal" class="input" required>
-                </div> 
-               <div class="inputfield">              
-                        <input type="checkbox">&ensp;<span>Aceito os termos e condições</span>
-                </div> 
-               <div class="btn">
-                 <input type="submit" value="Register" class="btn">
-               </div>
-             </div>
-         </div>		
+        <div class="logo">ALTESC</div>
+            <div class="wrapper">
+                <div class="form">
+                    <div class="inputfield-fname">
+                        <input  class="inputfield-fname"   type="text" placeholder="Primeiro Nome" class="input" required>
+                    </div>
+                    <div class="inputfield-lname">
+                        <input class="inputfield-lname"  type="text" placeholder="Último Nome" class="input" required>
+                    </div>
+                    <div class="inputfield-psw">
+                        <input  class="inputfield-psw"  type="password" placeholder="Password" show="*" value="" required>
+                    </div>
+                    <div class="inputfield-confirmpsw">
+                        <input  class="inputfield-confirmpsw" type="password" placeholder="Confirme Password" show="*" value="" required>
+                    </div>
+                    <div class="inputfield-email">
+                        <input  class="inputfield-email" type="text" placeholder="Email" required>
+                    </div>
+                    <div class="inputfield-phone">
+                        <input  class="inputfield-phone" type="text" placeholder="Contacto" class="input" required>
+                    </div>
+                    <div class="inputfield-adress">
+                        <input  class="inputfield-adress" type="text" placeholder="Endereço" class="input" required>
+                    </div>
+                    <div class="inputfield-zip">
+                        <input  class="inputfield-zip" type="text" placeholder="Código Postal" class="input" required>
+                    </div>
+                    <div class="inputfield">
+                        <input class="checkbox" type="checkbox">&ensp;<span class="terms"> Aceito os termos e condições</span>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Register" class="btn">
+                    </div>
+                </div>
+            </div>
         </form>
     </main>
-    
+                   
 </body>
+
 </html>
