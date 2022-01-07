@@ -4,8 +4,8 @@
 // Regras dos campos 
 
 // Username ou Email = validar com o seu username ou email caso contrário surgirá uma mensagem de erro "Verifique se já tem uma conta criada"
-// Username ou Email = validar com caracteres no caso de username ou conter @ no caso email caso contrário surgirá uma mensagem de erro "campos inválidos"
-// Password = validar com a sua password 
+// Username ou Email = validar com letras(strings) no caso de username ou conter @ no caso email caso contrário surgirá uma mensagem de erro "campos inválidos"
+// Password = validar com a sua password guardada na localStorage
 
 
 

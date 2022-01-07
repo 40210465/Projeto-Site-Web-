@@ -34,11 +34,11 @@
                         /* Design dos inputs  */
 main{
    
-   height:420px;
+   height:340px;
    top:50%;
    left: 50%;
    position:absolute;
-   transform:translate(-50%,-110%);
+   transform:translate(-50%,-115%);
    
 }
 
