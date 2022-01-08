@@ -11,9 +11,9 @@
 }
 
 /* ------------------------------------BACKGROUND--------------------------------------------------- */
-  /* pseudo-classe para o linear gradient*/
+/* Pseudo class root representando o documento HTml */
   :root{
-    /* variáveis */
+    /* variáveis globais  para o linear gradient */
     --primary: rgba(12, 87, 49, 0.568);
     --secondary: hsla(210, 79%, 27%, 0.75);
   }
