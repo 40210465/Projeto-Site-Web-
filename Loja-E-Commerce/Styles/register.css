@@ -65,7 +65,7 @@ input{
 
 input{
 position:relative;
-transition: .6s;
+transition: 1.2s;
 
 }
 
@@ -163,8 +163,35 @@ input{
     padding: 0 5em;
 }
 
+.checkbox{
+    cursor: pointer;
+}
 
+.logo{
+    transition: 1.2s;
+}
 
+.logo:hover{
+    color:white;
+    cursor: pointer;
+}
 
+.btn{
+    cursor: pointer;
+}
 
+.terms:hover{
+    cursor: pointer;
+    color:#35b79c;
+    border-bottom: 4px solid #35b79c;
+}
 
+.btn{
+    transition: 1.2s;
+}
+
+.btn:hover{
+    background-color:white;
+    border-bottom: 4px solid #35b79c;
+    color:#35b79c;
+}

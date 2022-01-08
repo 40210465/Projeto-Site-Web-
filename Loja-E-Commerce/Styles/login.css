@@ -1,29 +1,156 @@
-body {
-    background-image: url("../Images/BACKGROUND/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Paramêtros Globais */
+/* Seletor Global */
+/* selector global para impactar o documento todo   */
+*,
+*::before,
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* ------------------------------------BACKGROUND--------------------------------------------------- */
+  /* pseudo-classe para o linear gradient*/
+  :root{
+    /* variáveis */
+    --primary: rgba(12, 87, 49, 0.568);
+    --secondary: hsla(210, 79%, 27%, 0.75);
+  }
+  
+  .bg-image{
+    height: 100%;
+    background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+                      url("../Images/BACKGROUND/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
+    background-position: center;
     background-size: cover;
-    text-align: center;
-    font-size: 10px;
-    background-color: rgba(237, 44, 44, 0.235);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+
+  /*------------------------------------MAIN SECTION - LOGIN FORM----------------------------------------------------------- */
+
+main{
+    height: 340px;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    
 }
 
-body {font-family : 'Staatliches', cursive;}
-
-.container {
-    width: 400px;
-    max-width: 400px;
-    margin: 1rem;
-    padding: 2rem;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.235);
-    border-radius: 25px;
-    text-align: center;
+.login-form-container{
+    background-color: rgb(21 22 45 / 44%);
+    width: 150%;
+    max-width:900px;
+    margin:32px auto;
+    padding:62px 94px;
+    line-height: 3.1em;
 }
 
- .login{
-    color:Red;
+input{
+    width: 100%;
+    border:none;
 }
+
+input{
+    position: relative;
+    /* transition para input animation */
+    transition: 1.2s;
+}
+
+input{
+    width: 100%;
+    padding: 15px 0;
+    border:none;
+    border-bottom: 4px solid #35b79c;
+    background-color: #097bab00;
+    outline:none;
+}
+
+.logo{
+    color:#35b79c;
+    font-size:4em;
+    display: flex;
+    justify-content: center;
+    line-height: 6rem;
+    transform: translateY(-22%);
+}
+
+.Username-Email:focus{
+    transform:translateY(-24px);
+    background-color: white;
+    
+}
+
+.Password:focus{
+    transform:translateY(-24px);
+    background-color: white;
+
+}
+
+#form{
+    /* para centrar o formulário  */
+    transform: translate(-80%,-80%);
+}
+ 
+.btn{
+    background-color: #35b79c;
+    border-bottom: 4px solid white;
+}
+
+.btn-login{
+    transform:translateY(60%);
+}
+
+.forget-psw{
+    display: flex;
+    justify-content: center;
+    transform: translateY(30%);
+
+}
+
+.nao-tens-conta{
+    display: flex;
+    justify-content: center;
+    transform: translateY(30%);
+}
+
+.hov-forget-psw{
+    transition: .6s;
+}
+
+.hov-forget-psw:hover{
+    color:#35b79c;
+}
+
+.hov-nao-tens-conta{
+    transition: .6s;
+}
+
+.hov-nao-tens-conta:hover{
+    color:#35b79c;
+}
+
+
+.btn{
+    cursor: pointer;
+    transition: 1.2s;
+}
+
+.btn:hover{
+    color:#35b79c;
+    background-color: white;
+    border-bottom: 4px solid #35b79c;
+}
+
+.logo{
+    cursor: pointer;
+    transition: 1.2s;
+}
+
+.logo:hover{
+    color:white;
+}
+
+

@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login / Sign up</title>
-    <meta name="Login" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTESC | LOGIN</title>
     <link rel="stylesheet" href="/Loja-E-Commerce/Styles/login.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/Loja-E-Commerce/fonts-fontes-da-tipografia/register-fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Loja-E-Commerce/fonts-fontes-da-tipografia/login-fonts.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="/Loja-E-Commerce/scripts/login.js"></script>
     
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <form id="login">
+    <div class="bg-image"></div>
+    <main id="form">
+    <div class="login-form-container">
+        <form action="/Loja-E-Commerce/Navigation-Area/Shop-artigos/destaques.html">
             <div class="form">
-                <h1 class="login">Login</h1>
-                <input placeholder="Username ou Email" class="Username" required>
+             <div class="logo">ALTESC</div>
+                <input  placeholder=" Email" class="Username-Email" required>
                 <p>
-                <input placeholder="Password" class="Password" required>
+                <input  class="Password" placeholder="Password"  type="password"  show="*" value="" required>
                 </p>
-            </div>
-            <button class="button" type="submit">Continue</button>
-            <div class="links">
-                <p>
-                    <a id="NovaPassword" href="NovaPassword">Esqueceu da password?</a>
-                </p>
-                <p>
-                    <a id="NovaConta" href="/Loja-E-Commerce/Autentificação-Area/Register.html">Não tens conta? Sign up</a>
-                </p>
+            </div> 
+                <div class="forget-psw">        
+                    <a class="hov-forget-psw" id="NovaPassword" href="#">Esqueceu da password?</a>
+                </div>     
+                <div class="nao-tens-conta">
+                    <a class="hov-nao-tens-conta" id="NovaConta" href="/Loja-E-Commerce/Autentificação-Area/Register.html">Não tens conta? Sign up</a>
+                </div>
+                <div class="btn-login">
+                    <input type="submit" value="LOGIN" class="btn">
+                </div>
             </div>
         </form>
     </div>
-    </p>
+</main>
+  
 </body>
 </html>
