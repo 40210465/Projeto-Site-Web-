@@ -87,6 +87,10 @@ input{
 
 }
 
+main .remove-line-link{
+    text-decoration: none;
+}
+
 .inputfield-fname:focus{
         transform:translateY(-24px);
     background-color: white;  

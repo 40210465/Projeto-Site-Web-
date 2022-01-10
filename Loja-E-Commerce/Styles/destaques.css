@@ -37,6 +37,17 @@ header{
     top: 0;
 }
 
+header{
+    position: absolute;
+    width: 1200px;
+    height: 35px;
+    transform: translateX(12.8%);
+    top:76px;
+    padding:0 32px;
+    border-bottom:14px solid #35b79c;
+
+}
+
 a{
     text-decoration: none;
 }
@@ -50,33 +61,33 @@ div.container{
     width: 100%;
     max-width: 117rem;
     margin:0 auto;
-    padding: 0 1.3rem;
-
 }
 
 nav{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 12rem;
-    border-bottom: 14px solid #35b79c;
+    height: 3rem;
+   
 }
 
 .logo{
     width: 45rem;
-    height: 6rem;
-    font-size: 50px;
-    margin-right: 12px;
+    height: 5.2rem;
+    font-size: 59px;
+    margin-right: 19px;
     margin-right: 8rem;
     color:#35b79c;
     line-height: 6.5rem;
     padding: 8px;
+    transform: translateY(-100%);
 }
 
 .nav-list{
-    transform: translateX(-16%);
+    transform: translate(28%,-55%);
     display:flex;
-    width: 106%;
+    width: 148%;
+    height: 70px;
     align-items: center;
 }
 
@@ -84,7 +95,28 @@ nav{
 .nav-list a{
     display: inline;
     padding: 0 1.8rem;
-    font-size: 1.9rem;
+    font-size: 2.1rem;
+}
+
+.ion-md-contact{
+    position: absolute;
+    right: 129px;
+    top:10px;
+    font-size: 3.7rem;
+}
+
+
+
+.ion-ios-cart{
+    position: absolute;
+    right: 195px;
+    top:10px;
+    font-size: 3.7rem;
+}
+
+.logo{
+    position: absolute;
+    right: 671px;
 }
 
 .dropdown-sub-menu1{
@@ -107,10 +139,6 @@ nav{
     top:16rem;
     opacity: 0;
     visibility: hidden;
-}
-
-ul{
-  color:REd;
 }
 
 

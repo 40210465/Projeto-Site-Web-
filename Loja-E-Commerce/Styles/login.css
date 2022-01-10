@@ -77,6 +77,10 @@ input{
     transform: translateY(-22%);
 }
 
+main .remove-line-under-logo{
+    text-decoration: none;
+}
+
 .Username-Email:focus{
     transform:translateY(-24px);
     background-color: white;
