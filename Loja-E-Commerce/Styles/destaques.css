@@ -16,6 +16,7 @@
     /* variáveis globais para o linear gradient */
     --primary: rgba(12, 87, 49, 0.568);
     --secondary: hsla(210, 79%, 27%, 0.75);
+    --third:rgba(47, 49, 53, 0.776);
 }
 
 .bg-image{
@@ -153,7 +154,7 @@ nav{
     line-height: 5em;
     opacity:2;
     visibility: visible;
-    display: block;
+  
 }
 
 .nav-list li:hover .dropdown-sub-menu2{
@@ -236,18 +237,99 @@ ul .style-sub-menu:hover{
 }
 
 /* ---------------------------------------------MAIN SECTION----------------------------------------------------------- */
-                                    /* MAIN SECTION COM CONTAINER SLIDESHOW DE IMAGENS DE ARTIGOS EM DESTAQUE  */
-main{
-   position: absolute;
-    top: 34%;
-    left: 9%;
-    width: 1190px;
-    height: 1800px;
-    padding: 50px;
-    margin: 20px;
-    background-color:rgba(255, 255, 255, 0.235);
+                                            /* FEATURES COM CSS GRID LAYOUT  */
+
+main h3{
+    position: absolute;
+    top:35%;
+    font-size: 4em;
+    left: 10%;
+    padding-right: 900px;
+    border-bottom: 7px solid #35b79c;
 }
 
-/* AREA PARA O SLIDE DOS ARTIGOS DE DESTAQUE */
+main .oculos-vr-container{
+    position: absolute;
+    width: 1200px;
+    height: 462px;
+    left: 150px;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.235);
+    background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+    url("/Loja-E-Commerce/Images/PRODUTOS/DESTAQUES/sony-vr.jpg");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;  
+}
 
-    
+main .fifa-22-container{
+    position: absolute;
+    width: 1200px;
+    height: 462px;
+    left: 150px;
+    top: 115%;
+    background-color: rgba(255, 255, 255, 0.235);
+    background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+    url("/Loja-E-Commerce/Images/PRODUTOS/DESTAQUES/FIFA-22.jpg");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;  
+}
+
+
+main .consola-PS5-Exclusivo-container{
+    position: absolute;
+    width: 1200px;
+    height: 462px;
+    left: 150px;
+    top: 180%;
+    background-color: rgba(255, 255, 255, 0.235);
+    background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+    url("/Loja-E-Commerce/Images/PRODUTOS/DESTAQUES/ps5.png");;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+      
+}
+
+/* para centrar o nome dos artigos nos containers */
+
+.centered{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+
+section .centered{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#35b79c;
+    border-radius: 20%;
+   
+}
+
+main .oculos-vr-container:hover{
+    cursor:pointer;
+    background-image: url("/Loja-E-Commerce/Images/PRODUTOS/DESTAQUES/sony-vr.jpg");
+}
+
+main .fifa-22-container:hover{
+    cursor:pointer;
+    background-image: url("/Loja-E-Commerce/Images/PRODUTOS/DESTAQUES/FIFA-22.jpg");
+}
+
+main .consola-PS5-Exclusivo-container:hover{
+    cursor: pointer;
+    background-image: url("/Loja-E-Commerce/Images/PRODUTOS/DESTAQUES/ps5.png");
+}
+
+
+
+
+
+
+
+
+/* Display:grid; */
