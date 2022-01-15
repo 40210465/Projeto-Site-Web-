@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+:root{
+    /* variáveis globais para o linear gradient */
+    --primary: rgba(12, 87, 49, 0.568);
+    --secondary: hsla(210, 79%, 27%, 0.75);
+  }
+  
+.imagem-fundo{
+    height: 100%;
+    background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+                      url("../Images/BACKGROUND/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 150vh;
+}
+
 a{
     text-decoration: none;
 }
