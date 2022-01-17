@@ -1,0 +1,35 @@
+/* Paramêtros Globais */
+/* Seletor Global */
+/* selector global para impactar o documento todo   */
+*,
+*::before,
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* ----------------------------------------BACKGROUND--------------------------------------------------- */
+   /* Pseudo class root representando o documento HTml */
+    :root{
+        /* variáveis globais para o linear gradient */
+        --primary: rgba(12, 87, 49, 0.568);
+        --secondary: hsla(210, 79%, 27%, 0.75);
+      }
+      
+      .bg-image{
+        height: 100%;
+        background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+                          url("/Loja-E-Commerce/Images/BACKGROUND/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+      }
+      /* ----------------------------------MAIN SECTION------------------------------------------------------------------------------------- */
+.detail-content{
+  display: grid;
+  
+}
