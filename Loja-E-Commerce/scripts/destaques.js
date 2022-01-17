@@ -30,3 +30,12 @@ function PS5_mouse_over(){
 function PS5_mouse_out(){
     document.getElementById("changeText3").innerHTML = "EXCLUSIVO PLAYSTATION 5";
 }
+
+// url serve como parametro para abrir a pop window
+function openPopup(url){
+    // var = window.open(url,'popUpWindow', definição da janela)
+    popupWindow = window.open(url,'popUpWindow','height=500,width=500,left=480,top=100');
+}
+
+
+

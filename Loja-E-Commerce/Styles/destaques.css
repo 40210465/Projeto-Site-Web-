@@ -27,7 +27,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 800vh;
+    height: 320vh;
     
 }
 
@@ -325,11 +325,155 @@ main .consola-PS5-Exclusivo-container:hover{
     background-image: url("/Loja-E-Commerce/Images/PRODUTOS/DESTAQUES/ps5.png");
 }
 
+.grid-video-container{
+    position: absolute;
+    top:270%;
+}
+
+main .grid-video-container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap:4em;
+    padding-left:19rem;
+}
+
+.iconify{
+position: absolute;
+transform: translate(10%,-220%);
+font-size: 6em;
+background-color: #35b79c;
+border-radius: 100%;
+}
+
+article img{
+    border:20px solid rgba(255, 255, 255, 0.235);
+}
+
+/* -----------------------------------------FOOTER COM AREA INSTITUCIONAL------------------- */
+
+footer{
+    position: absolute;
+    background-color: #35b79c;
+    min-width: 100%;
+    height: 18em;    
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    transform: translateY(580%);
+}
+
+.game-media{
+    display: flex;
+    padding-left: 20em;
+    padding-top: 4em;
+ 
+}
+
+.ion-logo-xbox{
+    font-size: 4em;
+}
+
+.ion-logo-playstation{
+    font-size: 4em;
+}
+
+.ion-logo-apple{
+    font-size: 4em;
+}
+
+.ion-logo-steam{
+    font-size: 4em;
+}
+
+.ion-logo-windows{
+    font-size: 4em;
+}
+
+.ion-logo-xbox{
+    color:#107C10;
+}
+
+.ion-logo-playstation{
+    color:rgb(29, 29, 157);
+}
+
+.ion-logo-windows{
+    color:#1DA1F2;
+}
+
+.ion-logo-steam{
+    color:black;
+}
+.ion-logo-apple{
+    color:#fff;
+}
+
+.social-media{
+    display: flex;
+    padding-left: 124em;
+    
+}
+
+.ion-logo-facebook{
+    font-size: 4em;
+}
+
+.ion-logo-instagram{
+    font-size: 4em;
+}
+
+.ion-logo-twitter{
+    font-size: 4em;
+}
+
+.ion-logo-youtube{
+    font-size: 4em;
+}
+
+.ion-logo-twitch{
+    font-size: 4em;
+}
+
+footer .social-media{
+position: absolute;
+top: 40%;
+right: 15%;
+}
+
+.ion-logo-instagram{
+    color:#C13584;
+    
+}
+
+.ion-logo-facebook{
+    color:	#4267B2;
+}
+
+.ion-logo-twitter{
+    color:#1DA1F2;
+}
+
+.ion-logo-youtube{
+    color: rgb(196, 22, 22);
+}
+
+.ion-logo-twitch{
+    color:rgb(135, 14, 135);
+}
+
+footer .logo{
+    color: white;
+    position: absolute;
+    left: 11.6em;
+}
+
+
+    
+   
 
 
 
 
-
-
-
-/* Display:grid; */
