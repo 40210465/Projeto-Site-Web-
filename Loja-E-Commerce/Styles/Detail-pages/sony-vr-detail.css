@@ -34,7 +34,7 @@
   width: 48em;
   height: 62em;
   top:8%;
-  left: 15%;
+  left: 13%;
   background-color: rgba(255, 255, 255, 0.235);
 }
 
@@ -110,8 +110,8 @@ main .price h2{
 
 .zoom-images{
   position: absolute;
-  top:65%;
-  left: 16%;
+  top:72%;
+  left: 17.5%;
 }
 
 .zoom-images{
@@ -144,7 +144,8 @@ img:hover{
 }
 
 .zoom-image-1:hover{
-  transform: scale(2.2);
+  transform: scale(2.3);
+  border:3px solid #35b79c;
 }
 
 .zoom-image-2{
@@ -153,6 +154,7 @@ img:hover{
 
 .zoom-image-2:hover{
   transform: scale(2.6);
+  border:3px solid #35b79c;
 }
 
 .zoom-image-3{
@@ -160,23 +162,125 @@ img:hover{
 }
 
 .zoom-image-3:hover{
-  transform: scale(1.8);
+  transform: scale(2);
+ border:3px solid #35b79c;
 }
 
 .sony-vr{
   opacity: 0.8;
 }
 
-.lupa{
-  position: absolute;
-  right: 2em;
-  width: 20px;
-  top: 12px;
-}
-
 .zoom{
   position: absolute;
-  top:85%;
-  left:44%;
+  top:92%;
+  left:44.7%;
 }
+
+  .container-zoom-images{
+  position: absolute;
+  top:67.6%;
+  width: 100.35%;
+  height: 14%;
+  left: 3%;
+  transform: translateX(-3.2%);
+  background-color: rgba(0, 0, 0, 0.538);
+
+}
+
+.product-description-container{
+  position: absolute;
+  top:102%;
+  width:  73.8%;
+  height: 70%;
+  left: 13%;
+  right: 20%;
+  background-color: rgba(0, 0, 0, 0.538);
+}
+
+ .live-the-game h2{
+ text-align: center;
+ font-size: 4em;
+ transform: translateY(32%);
+ letter-spacing: 6px;
+ color: #35b79c;
+}
+
+.live-the-game-content p{
+  text-align: center;
+  font-size: 13px;
+  transform: translateY(126%);
+  letter-spacing: 2px;
+}
+
+.widget-content h2{
+  font-size: 28px;
+  text-indent:12px;
+  letter-spacing: 3px;
+  color:#35b79c;
+  transform: translateY(48%);
+}
+
+.widget-content p{
+  font-size:13px;
+  letter-spacing: 1px;
+  text-indent: 12px;
+}
+
+.graus p{
+  color: #35b79c;
+  font-size:18px;
+  letter-spacing: 3px;
+  transform: translateY(55%);
+}
+.text-center p{
+    transform: translateY(80%);
+}
+
+.graficos p{
+  color: #35b79c;
+  font-size: 18px;
+  letter-spacing: 3px;
+  transform: translateY(54%);
+}
+
+.audio h2{
+  transform: translateY(32%);
+}
+
+.text-align{
+  transform: translateY(6%);
+}
+
+.format-text p{
+  color: #35b79c;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+.microfone p{
+  color: #35b79c;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.playstation-logo .ion-logo-playstation{
+  font-size: 6em;
+  display: flex;
+  justify-content: center;
+  transform:translateY(30%) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
