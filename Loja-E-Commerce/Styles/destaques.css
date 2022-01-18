@@ -16,7 +16,7 @@
     /* variáveis globais para o linear gradient */
     --primary: rgba(12, 87, 49, 0.568);
     --secondary: hsla(210, 79%, 27%, 0.75);
-    --third:rgba(47, 49, 53, 0.776);
+   
 }
 
 .bg-image{
