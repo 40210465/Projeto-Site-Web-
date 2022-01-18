@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <!--Logo Website-->
     <link rel="shortcut icon" href="..\..\Images\Logo\LogoALTESC.png">
+    <script src="..\..\scripts\opinioes.js"></script> 
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                 <span>COMENTÁRIOS</span>
                 <h1>Visitantes Disseram</h1>
 
-                <div class="comentarios-box-container">
+                <div class="comentarios-box-container" id="coment-box">
 
                     <!--Comentário 1----------------------------------------------------------------------------------------------------->
                         <div class="comentarios-box">                                                                             <!--|-->
@@ -50,12 +51,12 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu nisi vel neque congue       <!--|-->
                                 accumsan. Phasellus nibh erat, lacinia et ligula quis, semper imperdiet diam. Morbi mi            <!--|-->
                                 lorem, ornare ut fermentum vitae, egestas vel turpis. Interdum et malesuada fames ac ante         <!--|-->
-                                ipsum primis in faucibus. Mauris id feugiat erat, quis varius elit. Praesent lacinia purus        <!--|-->
-                                nec augue pulvinar consequat. Donec ut condimentum sapien. Nullam dignissim, ante vel cursus      <!--|-->
-                                dignissim, urna ligula scelerisque orci, et finibus arcu leo tincidunt enim. Duis tincidunt       <!--|-->
-                                vulputate nulla, vel fringilla ex rutrum mattis. Sed massa lectus, sagittis vel tincidunt         <!--|-->
-                                quis, varius non sem. Aliquam erat volutpat. Fusce vitae massa quis tortor gravida tempus.        <!--|-->
-                                Morbi ac lacinia libero, sed varius lectus.                                                       <!--|-->
+                                ipsum primis in faucibus. Mauris id feugiat erat, quis varius elit.                               <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
                                 </p>                                                                                              <!--|-->
                             </div>                                                                                                <!--|-->
                         </div>                                                                                                    <!--|-->
@@ -86,13 +87,13 @@
                         <div class="comentario-visitante">                                                                        <!--|-->
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu nisi vel neque congue           <!--|-->
                             accumsan. Phasellus nibh erat, lacinia et ligula quis, semper imperdiet diam. Morbi mi                <!--|-->
-                            lorem, ornare ut fermentum vitae, egestas vel turpis. Interdum et malesuada fames ac ante             <!--|-->
-                            ipsum primis in faucibus. Mauris id feugiat erat, quis varius elit. Praesent lacinia purus            <!--|-->
-                            nec augue pulvinar consequat. Donec ut condimentum sapien. Nullam dignissim, ante vel cursus          <!--|-->
-                            dignissim, urna ligula scelerisque orci, et finibus arcu leo tincidunt enim. Duis tincidunt           <!--|-->
-                            vulputate nulla, vel fringilla ex rutrum mattis. Sed massa lectus, sagittis vel tincidunt             <!--|-->
-                            quis, varius non sem. Aliquam erat volutpat. Fusce vitae massa quis tortor gravida tempus.            <!--|-->
-                            Morbi ac lacinia libero, sed varius lectus.                                                           <!--|-->
+                            lorem, ornare ut fermentum vitae, egestas vel turpis.                                                 <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
                             </p>                                                                                                  <!--|-->
                         </div>                                                                                                    <!--|-->
                     </div>                                                                                                        <!--|-->
@@ -163,10 +164,10 @@
                             lorem, ornare ut fermentum vitae, egestas vel turpis. Interdum et malesuada fames ac ante             <!--|-->
                             ipsum primis in faucibus. Mauris id feugiat erat, quis varius elit. Praesent lacinia purus            <!--|-->
                             nec augue pulvinar consequat. Donec ut condimentum sapien. Nullam dignissim, ante vel cursus          <!--|-->
-                            dignissim, urna ligula scelerisque orci, et finibus arcu leo tincidunt enim. Duis tincidunt           <!--|-->
-                            vulputate nulla, vel fringilla ex rutrum mattis. Sed massa lectus, sagittis vel tincidunt             <!--|-->
-                            quis, varius non sem. Aliquam erat volutpat. Fusce vitae massa quis tortor gravida tempus.            <!--|-->
-                            Morbi ac lacinia libero, sed varius lectus.                                                           <!--|-->
+                            dignissim, urna ligula scelerisque orci, et finibus arcu leo tincidunt enim.                          <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
+                                                                                                                                  <!--|-->
                             </p>                                                                                                  <!--|-->
                         </div>                                                                                                    <!--|-->
                     </div>                                                                                                        <!--|-->
@@ -245,7 +246,10 @@
                         </div>                                                                                                    <!--|-->
                     </div>                                                                                                        <!--|-->
                     <!-------------------------------------------------------------------------------------------------------------------> 
-                </div>                                                                                          
+                </div>
+                
+                <input type="button" value="Adicionar Comentário" onclick="addComment()">  
+                                                                                                    
             </div>
 
         </section>
