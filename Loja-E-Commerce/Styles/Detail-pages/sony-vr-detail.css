@@ -26,7 +26,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        height: 200vh;
+        height: 173vh;
       }
       /* ----------------------------------MAIN SECTION------------------------------------------------------------------------------------- */
 .product-image{
@@ -189,7 +189,7 @@ img:hover{
 
 .product-description-container{
   position: absolute;
-  top:93%;
+  top:96.5%;
   width:  70.6%;
   height: 70%;
   left: 13%;

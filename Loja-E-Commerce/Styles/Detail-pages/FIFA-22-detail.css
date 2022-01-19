@@ -26,7 +26,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        height: 200vh;
+        height: 161vh;
       }
 
          /* ----------------------------------MAIN SECTION------------------------------------------------------------------------------------- */
@@ -190,17 +190,72 @@ img:hover{
 
 .product-description-container{
   position: absolute;
-  top:93%;
+  top:95.5%;
   width:  70.56%;
-  height: 70%;
+  height: 60%;
   left: 13%;
   right: 20%;
   background-color: rgba(0, 0, 0, 0.538);
 }
 
+.highlight-title h2{
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  text-align: center;
+  transform: translateY(40%);
+  color: #35b79c;
+}
 
+.detail-game-content p{
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-indent: 67px;
+  transform: translateY(40%);
+  
+}
 
+.detail-game-content{
+  transform: translateY(20%);
+}
 
+.ea-logo{
+  display: flex;
+  justify-content: center;
+}
+
+.ea-logo img{
+  transform: translateY(15%);
+}
+
+.ion-logo-xbox{
+  display: flex;
+  justify-content: center;
+}
+
+.xbox-logo i{
+  font-size: 7.2em;
+  transform: translateY(160%);
+  color: #35b79c;
+}
+
+.logos{
+  display: flex;
+  justify-content: center;
+}
+
+.logos{
+  transform: translateX(6.2%);
+}
+
+.detail-game-content p{
+  transition: 0.8s;
+}
+
+.detail-game-content p:hover{
+  color:#35b79c;
+  transform: translateY(25%);
+}
 
 /* -----------------------------------FOOTER------------------------------------------- */
 
@@ -324,7 +379,9 @@ footer .logo{
   transform: translateY(-30%);
 }
 
-
+.product-description-container img{
+  position: absolute;
+}
 
   
 
