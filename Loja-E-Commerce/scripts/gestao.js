@@ -1,24 +1,16 @@
-function AlertSecurity(){
-    var uservalue = confirm ("Deseja ativar o modo de segurança da sua conta ?");  
-    var yesawnser = alert("ATIVADO COM SUCESSO !!")
-    if(uservalue == True){
-        yesawnser = alert;
-    }
-    if(uservalue == False){
-        return confirm
-    }
+
+function AlertBox(){
+    alert("MODO DE SEGURANÇA ATIVADO COM SUCESSO !!");
+    document.getElementById('modal').style.display = 'none';
 }
 
-
-
-function AlertShop(){
-    window.alert("Nenhuma compra efetuada !!");
+function ConfirmBox(){
+    confirm("TEM A CERTEZA QUE PRETENDE DESATIVAR ?")
+    document.getElementById('second-modal').style.display = 'none';
 }
 
-function eliminarConta(){
-    var uservalue = confirm ("Tem a certeza que quer eliminar a conta ?");
-
+// para direcionar para o lobby do site quando eliminar a conta
+function ConfirmBoxClear(){
+    location.href = "/Loja-E-Commerce/index.html";
 }
-
-
 

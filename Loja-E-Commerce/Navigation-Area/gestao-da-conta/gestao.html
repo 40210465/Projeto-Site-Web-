@@ -18,11 +18,12 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="/Loja-E-Commerce/scripts/gestao.js"></script>
     <!--Logo Website-->
-    <link rel="shortcut icon" href="Images\Logo\LogoALTESC.png">
+    <link rel="shortcut icon" href="/Loja-E-Commerce/Images/Logo/LogoALTESC.png">
 </head>
 <body>
+    
     <!-- background -->
-    <div class="imagem-fundo"></div>
+    <div  class="imagem-fundo"></div>
         <!-- MAIN SECTION COM A GESTÃO DA CONTA -->
     <main>
         <div class="gestao-container">
@@ -30,20 +31,66 @@
                 <span>Altesc</span>
             </div>
             <div class="imagem-perfil">
-                <img src="/Loja-E-Commerce/Images/detail-page/avatar.png" alt="avatar">
+                <img src="/Loja-E-Commerce/Images/PROFILE-PICTURE/avatar.jpg" alt="avatar">
             </div>
             <div class="line">
                 <hr>
             </div>
+            <div class="buttons-section">
             <div class="seguranca-button">
-             <a onclick="AlertSecurity()"  href="#"><h2>Segurança</h2></a>
+                                                        <!-- display block para abrir o modal  -->
+                <button onclick="document.getElementById('modal').style.display = 'block'">Ativar segurança da conta</button>
+                <div id="modal" class="modal">                  
+                                                          <!--display none para fechar o modal ao clicar no close icon  -->
+                    <span onclick="document.getElementById('modal').style.display = 'none'" class="close-modal" title="Close Modal">&times;</span>
+                    <form action="/Loja-E-Commerce/Navigation-Area/gestao-da-conta/gestao.html" class="modal-content">
+                        <div class="container">
+                            <span class="logo">Altesc</span>
+                            <h1>segurança da conta</h1>
+                            <p>Deseja ativar o modo de segurança ?</p>
+                            <div class="option-buttons">
+                                <button onclick="AlertBox()" id="modal" type="button" class="yesbtn">Sim</button>
+                                <button id="modal" onclick="document.getElementById('modal').style.display = 'none'" type="button" class="nobtn">Não</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="compras-button">
-                <a onclick="AlertShop()" href="#"><h2>Compras</h2></a>
+            <div class="inseguranca-button">
+              <button onclick="document.getElementById('second-modal').style.display = 'block'">Desativar modo de segurança</button>
+              <div id="second-modal" class="second-modal">
+                <span onclick="document.getElementById('second-modal').style.display = 'none'" class="close-second-modal" title="Close-second-Modal">&times;</span>
+                <form action="/Loja-E-Commerce/Navigation-Area/gestao-da-conta/gestao.html" class="modal-content">
+                    <div class="container">
+                        <span class="logo">Altesc</span>
+                        <h1>segurança da conta</h1>
+                        <p>Deseja desativar o modo de segurança ?</p>
+                        <div class="option-buttons">
+                            <button onclick="ConfirmBox()" id="modal" type="button" class="yesbtn">Sim</button>
+                            <button id="second-modal" onclick="document.getElementById('second-modal').style.display = 'none'" type="button" class="nobtn">Não</button>
+                        </div>
+                    </div>
+                </form>
+              </div>
             </div>
             <div class="eliminar-button">
-                <a onclick="eliminarConta()" href="#"><h2>eliminar conta</h2></a>
+                <button onclick="document.getElementById('third-modal').style.display = 'block'">Eliminar conta</button>
+                <div id="third-modal" class="third-modal">
+                  <span onclick="document.getElementById('third-modal').style.display = 'none'" class="close-third-modal" title="Close-third-Modal">&times;</span>
+                  <form action="/Loja-E-Commerce/Navigation-Area/gestao-da-conta/gestao.html" class="modal-content">
+                      <div class="container">
+                          <span class="logo">Altesc</span>
+                          <h1>Eliminar Conta</h1>
+                          <p>Deseja eliminar a conta ?</p>
+                          <div class="option-buttons">
+                              <button onclick="ConfirmBoxClear()" id="third-modal" type="button" class="yesbtn">Sim</button>
+                              <button id="third-modal" onclick="document.getElementById('third-modal').style.display = 'none'" type="button" class="nobtn">Não</button>
+                          </div>
+                      </div>
+                  </form>
+                </div>
             </div>
+        </div>
             <div class="social-media">
                 <a href="#"><span><i class="ion-logo-facebook"></i></span></a>
                 &ensp;&ensp;&ensp;
