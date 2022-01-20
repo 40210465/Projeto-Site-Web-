@@ -91,9 +91,12 @@ main .price h2{
 .logo{
   font-size: 4em;
   position: absolute;
-  top: 45%;
-  left: 40%;
+  left: 38%;
   color: #35b79c;
+}
+
+.product-price .logo{
+transform: translateY(-50%);
 }
 
 .product-price h2{
