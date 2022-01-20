@@ -5,34 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALTESC | PERFIL</title>
-    <!--Para importar os icons do twitter e do youtube-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Noma da Loja -->
+    <title>ALTESC | GERIR CONTA</title>
+    <!--Styles do website -->
+    <link rel="stylesheet" href="/Loja-E-Commerce/Styles/gestao.css">
+    <link rel="stylesheet" href="/Loja-E-Commerce/fonts-fontes-da-tipografia/fonts.css">
+    <!-- link para elementos visuais icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- scripts do site -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="/Loja-E-Commerce/scripts/gestao.js"></script>
     <!--Logo Website-->
-    <link rel="shortcut icon" href="..\..\Images\Logo\LogoALTESC.png">
-    <link rel="stylesheet" href="..\..\Styles\gestao.css">
-
+    <link rel="shortcut icon" href="Images\Logo\LogoALTESC.png">
 </head>
-
 <body>
-    <main class="imagem-fundo">
-        <div class="card">
-            <div id="card-header">
-                <img src="..\..\Images\PROFILE PICTURE\DefaultIcon.png" class="imagem-perfil">
+    <!-- background -->
+    <div class="imagem-fundo"></div>
+        <!-- MAIN SECTION COM A GESTÃO DA CONTA -->
+    <main>
+        <div class="gestao-container">
+            <div class="logo">
+                <span>Altesc</span>
             </div>
-            <div class="card-body">
-                <button class="styleClass" onclick="document.getElementById('getFile').click()">Your text here</button>
-                <input type='file' id="getFile" style="display:none">
-                <p>
-                <p class="username">Default</p>
-                <p class="descricao">Default</p>
-                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
-                </p>
+            <div class="imagem-perfil">
+                <img src="/Loja-E-Commerce/Images/detail-page/avatar.png" alt="avatar">
             </div>
-            <div class="card-footer"></div>
-            <script src="..\..\scripts\gestao.js"></script>
+            <div class="line">
+                <hr>
+            </div>
+            <div class="seguranca-button">
+             <a onclick="AlertSecurity()"  href="#"><h2>Segurança</h2></a>
+            </div>
+            <div class="compras-button">
+                <a onclick="AlertShop()" href="#"><h2>Compras</h2></a>
+            </div>
+            <div class="eliminar-button">
+                <a onclick="eliminarConta()" href="#"><h2>eliminar conta</h2></a>
+            </div>
+            <div class="social-media">
+                <a href="#"><span><i class="ion-logo-facebook"></i></span></a>
+                &ensp;&ensp;&ensp;
+                <a href="#"><span><i class="ion-logo-instagram"></i></span></a>
+                &ensp;&ensp;&ensp;
+                <a href="#"><span><i class="ion-logo-twitter"></i></span></a>
+                &ensp;&ensp;&ensp;
+                <a href="#"><span><i class="ion-logo-youtube"></i></span></a>
+                &ensp;&ensp;&ensp;
+                <a href="#"><span><i class="ion-logo-twitch"></i></span></a>
+            </div>
         </div>
     </main>
 </body>

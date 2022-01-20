@@ -22,76 +22,17 @@
     height: 150vh;
 }
 
-body{
-    background-color: #e6e6e6;
-}
+/* MAIN SECTION COM A GESTÃO DA CONTA  */
 
-.card{
-    width: 400px;
-    margin: 75px auto 0;
-    background-color: white;
-    box-shadow: 0 3px 30px rgba(0, 0, 0, .14);
-    color: #444;
-    text-align: center;
-    font-size: 16px;
-}
-
-#card-header{
-    position: relative;
-    height: 48px;
-}
-
-#card-header img{
-    width: 96px;
-    height: 96px;
-    border-radius: 1000px;
+main .gestao-container{
+    background-color:rgba(0, 0, 0, 0.538);
+    width: 43em;
+    height: 52em;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 6px solid #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    left: 32%;
+    top:10%;
 }
 
-.card-body{
-    padding: 10px 40px;
-}
 
-.username{
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 10px 0 0;
-}  
 
-.descricao{
-    line-height: 24px;
-}
 
-.social-icon{
-    font-size: 18px;
-    margin: 0 7px;
-}
-
-.twitter{
-    color: #55acee;
-}
-
-.youtube{
-    color: #cd201f;
-}
-
-@media screen and (max-width: 575px){
-    .card{
-        width: 96%;
-    }
-
-    .card .card-body{
-        padding: 10px 20px;
-    }
-
-    .card-footer{
-        padding: 0 10px;
-        display: block;
-        margin-bottom: 5px;
-    }
-}
