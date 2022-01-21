@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/Loja-E-Commerce/fonts-fontes-da-tipografia/login-fonts.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="..\Images\Logo\LogoALTESC.png">
     <script src="/Loja-E-Commerce/scripts/login.js"></script>
        <!--Logo Website-->
        <link rel="shortcut icon" href="/Loja-E-Commerce/Images/Logo/LogoALTESC.png">
@@ -24,12 +25,12 @@
     <!-- MAIN SECTION COM O LOGIN FORM  -->
     <main id="form">
     <div class="login-form-container">
-        <form action="/Loja-E-Commerce/Navigation-Area/Shop-artigos/destaques.html">
+        <form onsubmit= "return validateLogin();" action="/Loja-E-Commerce/Navigation-Area/Shop-artigos/destaques.html">
             <div class="form">
              <a class="remove-line-under-logo" href="/Loja-E-Commerce/index.html"><div class="logo">ALTESC</div></a>
-                <input  placeholder=" Email" class="Username-Email" required>
+                <input  id="email" placeholder=" Email" class="Username-Email"required>
                 <p>
-                <input  class="Password" placeholder="Password"  type="password"  show="*" value="" required>
+                <input  id="password" class="Password" placeholder="Password"  type="password"  show="*" value="" required>
                 </p>
             </div> 
                 <div class="forget-psw">        
