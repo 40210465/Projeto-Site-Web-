@@ -141,3 +141,6 @@ input{
     color:#4b4b4b;
 }
 
+input[value] {
+    color: #4b4b4b;
+}
