@@ -242,9 +242,16 @@ footer{
 
 /* Descrição de Produto */
 
+.containerc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    margin-top: 0.3px;
+}
+
 .lista-produtos{
    padding: 3em;
-
 }
 
 .lista-produtos .carta{
@@ -301,13 +308,6 @@ section .imagem{
     margin-bottom: 0.5em;
     font-weight: bold;
     font-size: 2px;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
 }
 
 .align-center{
@@ -427,6 +427,4 @@ footer .logo{
     position: absolute;
     left: 11.6em;
 }
-
-.lista-produtos 
 
