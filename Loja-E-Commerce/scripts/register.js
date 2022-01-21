@@ -65,7 +65,7 @@ function validateAddress(){
 
 function validateCodPostal(){
     let codPostal= document.getElementById("codPostal").value
-    let codPostalFormat= /\d{4}([\-]\d{3})?/
+    let codPostalFormat= /^\d{4}([\-]\d{3})?$/
     if(!(codPostal.match(codPostalFormat))){
         alert("Formato Inválido Código Postal")
         document.getElementById("codPostal").focus()
@@ -78,7 +78,7 @@ function validateEmail(){
     let email= document.getElementById("emailR").value
     let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     if (!(email.match(mailformat))){
-        alert("Formato Inválido")
+        alert("Formato Inválido Email")
         document.getElementById("emailR").focus()
         return false
     }
@@ -86,7 +86,7 @@ function validateEmail(){
 }
 
 function validateRegister(){
-    if(validateFirstName() && validateLastName() && validateAddress() &&  validatePassword() && confPassword() && validatePhone() && validateCodPostal() && validateEmail()){
+    if(validateFirstName() && validateLastName() &&  validatePassword() && confPassword() && validateEmail() && validatePhone() && validateAddress() && validateCodPostal()){
         alert("Bem Vindo à ALTESC!!!")
         return true
     }
