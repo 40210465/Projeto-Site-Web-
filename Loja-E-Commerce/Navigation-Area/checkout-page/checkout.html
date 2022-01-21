@@ -21,15 +21,64 @@
     <div class="bg-image"></div>
         <!-- main section da página de pagamento -->
     <main>
+        <form action="/Loja-E-Commerce/Navigation-Area/checkout-page/checkout.html"></form>
         <div class="checkout-container">
         <div class="form-container">
             <div class="logo">Altesc</div>
+            <div class="background">
             <div class="inputfield">
-                
+                        <div class="fname-lname">
+                    <input type="text" class="inputfield-fname" placeholder="PRIMEIRO NOME" required>
+                    <span><input type="text" class="inputfield-lname"  placeholder="ÚLTIMO NOME" required></span>
+                </div>
+                    <div class="countries">
+                    <input type="text" class="inputfield-countries"  placeholder="INDIQUE O SEU PAÍS" required>
+                </div>
+                    <div class="adress">
+                        <input type="text"  class="adress" placeholder="ENDEREÇO" required>
+                    </div>    
+                    <div class="location">
+                        <input type="text" class="cidade-destrito" placeholder="CIDADE/DESTRITO" required>
+                        <span><input type="text"  class="frequesia-regiao" placeholder="FREGUESIA/REGIÃO" required></span>
+                    </div>
+                    <div class="zip">
+                        <input type="text" class="zip-code"  placeholder="CÓDIGO POSTAL" required>
+                    </div>
+                    <div class="email">
+                        <input type="email" class="email" value="email"  placeholder="EMAIL @" required>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="pay-services-container"></div>
-        <div class="button-pay-container"></div>
+        <div class="pay-services-container">
+            <div class="background">
+            <div class="title-pay">
+                <h2>MÉTODOS DE PAGAMENTO</h2>
+            </div>
+            <div class="select-menu">
+                <select name="services" id="services">
+                    <option class="select" value="SELECIONE A SUA OPÇÃO DE PAGAMENTO">SELECIONE A SUA OPÇÃO</option>
+                    <option class="select" value="VISA">VISA</option>
+                    <option class="select" value="MASTERCARD">MASTERCARD</option>
+                    <option class="select" value="MB WAY">MB WAY</option>
+                    <option class="select" value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+                    <option class="select" value="PAYPAL">PAYPAL</option>
+                    <option class="select" value="UNIVERSO">UNIVERSO</option>
+                </select>
+                <span><input type="text" value="NÚMERO DO CARTÃO" class="credit-card" placeholder="NÚMERO DO CARTÃO" required></span>
+                <span><input type="text" class="valor" value="INDIQUE O VALOR €" placeholder="INDIQUE O VALOR €" required></span>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="button-pay-container">
+            <button   onclick="document.getElementById('modal').style.display = 'block'" type="submit">EFETUAR PAGAMENTO</button>
+            <div id="modal" class="modal">
+                <span onclick="document.getElementById('modal').style.display = 'none'" class="close-modal" title="Close Modal">&times;</span>
+                <div class="container">
+                            <h1>COMPRA EFETUADA COM SUCESSO</h1>
+                </div>
+            </div>
         </div>
     </main>
 </body>

@@ -26,7 +26,280 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        height: 650vh;
+        height: 150vh;
       }
       /*------------------------ MAIN SECTION DA PÁGINA DE PAGAMENTO--------------------------------- */
+
+main{
+  position: absolute;
+  top:0;
+}
+
+main{
+  background-color:rgba(0, 0, 0, 0.538);
+  position: absolute;
+  top: 14%;
+  left: 35%;
+  width: 46.5em;
+  padding-left: 6em;
+  padding: 5em;
+  height: 78em;
+}
+
+.logo{
+  font-size: 6.5em;
+  color:#35b79c;
+}
+
+.inputfield input{
+  font-size: 2em;
+  letter-spacing: 1.2px;
+}
+
+.pay-services-container h2{
+  font-size: 2.5em;
+  letter-spacing:1.7px;
+  color: #35b79c;
+}
+
+.select-menu select{
+  font-size: 2.5em;
+  letter-spacing:1.7px;
+}
+
+.select{
+  font-size: 20px;
+  letter-spacing:1.7px;
+}
+
+.credit-card{
+  font-size: 2em;
+  letter-spacing:1.7px;
+}
+
+button{
+  font-size: 2em;
+  color:white;
+  background-color: #35b79c;
+  border-bottom: 4px solid white;
+}
+
+.logo{
+display: flex;
+justify-content: center;
+}
+
+.logo{
+  transform: translateY(-30%);
+}
+
+.checkout-container{
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 3em;
+}
+
+  .button-pay-container{
+  display: grid;
+}
+
+.button-pay-container{
+  position: absolute;
+  top: 80%;
+  width: 86%;
+}
+
+main{
+  color: #35b79c;
+}
+
+input{
+  border: none;
+  border-bottom: 4px solid #35b79c;
+  background-color: #097bab00;
+  outline:none;
+ }
+
+
+.checkout-container{
+  text-align: center;
+}
+
+.inputfield input{
+      width: 49.8%;
+}
+
+.countries input{
+  width: 100%;
+}
+
+.adress input{
+  width: 100%;
+}
+
+.zip input{
+  width: 100%;
+}
+
+.email input{
+  width: 100%;
+}
+
+.select-menu input{
+  width: 100%;
+}
+
+.inputfield input{
+    line-height: 2em;
+}
+
+main button{
+  position: relative;
+  top: 173%;
+  width: 91.3%;
+}
+
+main button{
+  border: none;
+  padding: 8px;
+  border-bottom: 8px solid;
+  position: relative;
+  top: 80%;
+}
+
+.pay-services-container h2, .select-menu{
+  display: grid;
+  grid-gap: 5em;
+}
+
+ #services{
+   position: relative;
+  top: 70%;
+  color: #35b79c;
+  font-size: 2em;
+  }
+
+  .select{
+    color: #35b79c;
+  }
+
+  
+#services option:nth-child(even){
+  background-color: #2cbe5b;
+  color: white;
+}
+
+#services option:nth-child(odd){
+  background-color: rgba(51, 26, 26, 0.667);
+  color: white;
+
+}
+/* --------------------------MODAL--------------------------------------------------------------------- */
+
+.modal {
+  padding: 20px;
+  background-color: #2ae976;
+  color: white;
+  margin-bottom: 15px;
+}
+
+#modal{
+  width:382%;
+  left: -148%;
+  transform: translateX(-40%);
+  text-align: center;
+  display: none;
+}
+
+#modal h1{
+  font-size: 2em;
+}
+
+#modal{
+ transform: translateY(-1107%);
+}
+
+#modal{
+  position: absolute;
+  right:1150%;
+}
+
+.container h1{
+  font-size: 12px;
+}
+
+.close-modal {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-modal:hover {
+  color: black;
+}
+
+.close-modal{
+  position: absolute;
+  left: 95%;
+  top:40%;
+  font-size: 8em;
+}
+
+
+.modal{
+  position: absolute;
+  top:0%;
+  width: 100%;
+}
+
+.modal h2{
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.valor{
+  font-size: 2em;
+  letter-spacing: 1px;
+  transform: translateY(-70%);
+}
+
+.modal{
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+
+input{
+  transition: 1.2s;
+}
+
+
+input:hover{
+  background-color: white;
+  color:#35b79c;
+  transform: scale(1.4);
+}
+
+button{
+  transition: 1.3s;
+}
+
+button:hover{
+  background-color: white;
+  color: #35b79c;
+  border-bottom: 8px solid #35b79c;
+  cursor: pointer;
+  
+}
+
+#modal{
+  transform: translateY(50%);
+}
+
 

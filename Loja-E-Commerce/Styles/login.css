@@ -40,7 +40,7 @@ main{
 }
 
 .login-form-container{
-    background-color: rgb(21 22 45 / 44%);
+    background-color:rgba(0, 0, 0, 0.538);
     width: 150%;
     max-width:900px;
     margin:32px auto;
