@@ -37,5 +37,20 @@ function openPopup(url){
     popupWindow = window.open(url,'popUpWindow','height=500,width=500,left=480,top=100');
 }
 
+function addArtigo1() {
+    sessionStorage.clear()
+	sessionStorage.setItem("artigo1",1);
+  document.getElementById("lblCartCount").innerHTML=sessionStorage.length;
+}
+
+function addArtigo2() {
+	sessionStorage.setItem("artigo2",1);
+  document.getElementById("lblCartCount").innerHTML=sessionStorage.length;
+}
+
+function addArtigo3() {
+	sessionStorage.setItem("artigo3",1);
+  document.getElementById("lblCartCount").innerHTML=sessionStorage.length;
+}
 
 
