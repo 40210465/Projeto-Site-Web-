@@ -95,7 +95,8 @@ function addComment(){
     
     let div7= document.createElement("div")
     div7.className= "comentario-visitante"
-    div7.innerHTML= "<textarea rows='6' cols= '60' placeholder= 'Comente Aqui'></textarea>"
+    div7.innerHTML= "<textarea id='textarea' rows='6' cols= '100' style='color: #4b4b4b' placeholder= 'Comente Aqui'></textarea>"
+    
     
     
     div.append(div7)
