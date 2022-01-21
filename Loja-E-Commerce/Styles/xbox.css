@@ -27,7 +27,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    height: 140vh;
 
     
 }
@@ -207,6 +207,15 @@ a{
     justify-content:center;
 }
 
+#no-focus{
+    transition: 0.2s;
+}
+
+#no-focus:hover{
+background-color: rgba(29, 25, 163, 0.235);
+border-top: 8px solid white;
+}
+
 .dropdown-sub-menu1{
     background-color:rgb(21 22 45 / 44%);
      border-bottom: 4px solid white;
@@ -260,46 +269,46 @@ ul .style-sub-menu:hover{
 
 .container-one img{
     position: absolute;
-    top:55%;
-    left: 20%;
+    top:15%;
+    left: 23%;
 }
 
 .container-two img{
     position: absolute;
-    top:55%;
-    left: 28%;
+    top:15%;
+    left: 23%;
 
 }
 .container-three img{
     position: absolute;
-    top:55%;
-    left: 38%;
+    top:15%;
+    left: 23%;
 }
 
 .container-four img{
     position: absolute;
-    top:55%;
-    left: 48%;
+    top:15%;
+    left: 23%;
 
 }
 
 .container-five img{
     position: absolute;
-    top:55%;
-    left: 58%;
+    top:15%;
+    left: 23%;
 
 }
 
 .container-six img{
     position: absolute;
-    top:55%;
-    left: 68%;
+    top:15%;
+    left: 23%;
 
 }
 
 .heading h2{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 10%;
     font-size: 2.5em;
     color: white; 
@@ -307,12 +316,198 @@ ul .style-sub-menu:hover{
 
 .heading .line-heading{
     position: absolute;
-    top: 55%;
+    top: 35%;
     left: 10%;
-    width: 70%;
-    
+    width: 70.1%;   
     border: 4px solid #35b79c;
 }
+
+.heading h2{
+    letter-spacing: 1px;
+}
+
+.container-one{
+    background-color: rgba(255, 255, 255, 0.235);
+    position: absolute;
+    top:43%;
+    width: 25em;
+    height: 32em;
+    left: 153px;    
+}
+
+.container-two{
+    background-color: rgba(255, 255, 255, 0.235);
+    position: absolute;
+    top:43%;
+    width: 25em;
+    height: 32em;
+    left: 412px;    
+}
+
+.container-three{
+    background-color: rgba(255, 255, 255, 0.235);
+    position: absolute;
+    top:43%;
+    width: 25em;
+    height: 32em;
+    left: 672px;    
+}
+
+.container-four{
+    background-color: rgba(255, 255, 255, 0.235);
+    position: absolute;
+    top:43%;
+    width: 25em;
+    height: 32em;
+    left: 93.3em;    
+}
+
+.container-five{
+    background-color: rgba(255, 255, 255, 0.235);
+    position: absolute;
+    top:93%;
+    width: 25em;
+    height: 32em;
+    left: 41em;    
+}
+
+.container-six{
+    background-color: rgba(255, 255, 255, 0.235);
+    position: absolute;
+    top:93%;
+    width: 25em;
+    height: 32em;
+    left: 67em;    
+}
+
+.container-products span{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    position: relative;
+    top: 62%;
+}
+
+/* -----------------------------------------FOOTER COM AREA INSTITUCIONAL------------------- */
+
+footer{
+    position: absolute;
+    background-color: #35b79c;
+    min-width: 100%;
+    height: 18em;    
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    transform: translateY(580%);
+}
+
+.game-media{
+    display: flex;
+    padding-left: 20em;
+    padding-top: 4em;
+ 
+}
+
+.ion-logo-xbox{
+    font-size: 4em;
+}
+
+.ion-logo-playstation{
+    font-size: 4em;
+}
+
+.ion-logo-apple{
+    font-size: 4em;
+}
+
+.ion-logo-steam{
+    font-size: 4em;
+}
+
+.ion-logo-windows{
+    font-size: 4em;
+}
+
+.ion-logo-xbox{
+    color:#107C10;
+}
+
+.ion-logo-playstation{
+    color:rgb(29, 29, 157);
+}
+
+.ion-logo-windows{
+    color:#1DA1F2;
+}
+
+.ion-logo-steam{
+    color:black;
+}
+.ion-logo-apple{
+    color:#fff;
+}
+
+.social-media{
+    display: flex;
+    padding-left: 124em;
+    
+}
+
+.ion-logo-facebook{
+    font-size: 4em;
+}
+
+.ion-logo-instagram{
+    font-size: 4em;
+}
+
+.ion-logo-twitter{
+    font-size: 4em;
+}
+
+.ion-logo-youtube{
+    font-size: 4em;
+}
+
+.ion-logo-twitch{
+    font-size: 4em;
+}
+
+footer .social-media{
+position: absolute;
+top: 40%;
+right: 15%;
+}
+
+.ion-logo-instagram{
+    color:#C13584;
+    
+}
+
+.ion-logo-facebook{
+    color:	#4267B2;
+}
+
+.ion-logo-twitter{
+    color:#1DA1F2;
+}
+
+.ion-logo-youtube{
+    color: rgb(196, 22, 22);
+}
+
+.ion-logo-twitch{
+    color:rgb(135, 14, 135);
+}
+
+footer .logo{
+    color: white;
+    position: absolute;
+    left: 11.6em;
+}
+
 
 
 
