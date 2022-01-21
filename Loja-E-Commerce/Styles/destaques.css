@@ -307,8 +307,40 @@ section .centered{
     transform: translate(-50%, -50%);
     background-color:#35b79c;
     border-radius: 20%;
-   
 }
+
+main .centered{
+    position: absolute;
+    top: 50%;
+}
+
+main span{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    transform: translate(-50%, -50%);
+    background-color:#35b79c;
+    border-radius: 20%;
+}
+
+main span{
+    position:absolute;
+    top:30%;
+    left: 50%;
+}
+
+main .comprar{
+    position: absolute;
+    top: 71%;
+}
+
+.comprar a{
+    font-size: 1em;
+}
+
+
+
+
 
 main .oculos-vr-container:hover{
    
