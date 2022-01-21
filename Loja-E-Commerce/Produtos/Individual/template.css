@@ -26,7 +26,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 320vh;
+    height: 720vh;
     
 }
 
@@ -262,7 +262,9 @@ footer{
 
 }
 
-.carta img{
+section .imagem{
+    position: absolute;
+    top:0;
     max-width: 100%;
     border-radius: 5px;
 }
@@ -425,4 +427,6 @@ footer .logo{
     position: absolute;
     left: 11.6em;
 }
+
+.lista-produtos 
 
