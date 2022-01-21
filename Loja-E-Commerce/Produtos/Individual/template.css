@@ -1,0 +1,430 @@
+/* Paramêtros Globais */
+/* Seletor Global */
+/* selector global para impactar o documento todo   */
+
+*{  
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+/* ----------------------------------BACKGROUND-------------------------------------------------+*/
+
+/* ROOT SEMELHANTE A TAG HTML REPRESENTA O DOCUMENTO TODO*/
+:root{
+    /* variáveis globais para o linear gradient */
+    --primary: rgba(12, 87, 49, 0.568);
+    --secondary: hsla(210, 79%, 27%, 0.75);
+   
+}
+
+.bg-image{
+    height: 100%;
+    background-image: linear-gradient(180deg, var(--primary), var(--secondary)),
+                      url("../Images/BACKGROUND/dominique-van-velsen-by-dominique-van-velsen-offworld-cyberp.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 720vh;
+    
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+header{
+    position: absolute;
+    width: 1200px;
+    height: 35px;
+    transform: translateX(12.8%);
+    top:76px;
+    padding:0 32px;
+    border-bottom:14px solid #35b79c;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    /* para eliminar os pontos dos items da ul por default */
+    list-style: none;
+}
+
+div.container{
+    width: 100%;
+    max-width: 117rem;
+    margin:0 auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+   
+}
+
+.logo{
+    width: 45rem;
+    height: 5.2rem;
+    font-size: 59px;
+    margin-right: 19px;
+    margin-right: 8rem;
+    color:#35b79c;
+    line-height: 6.5rem;
+    padding: 8px;
+    transform: translateY(-130%);
+}
+
+.nav-list{
+    transform: translate(18%,-70%);
+    display:flex;
+    /*  */
+    width: 118%;
+    height: 70px;
+    align-items: center;
+}
+
+
+.nav-list a{
+    display: inline;
+    padding: 0 4rem;
+    font-size: 1.75rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1rem;
+    
+}
+
+.ion-md-contact{
+    position: absolute;
+    left:900px;
+    top:20px;
+    font-size: 2.7rem;
+}
+
+
+.ion-ios-cart{
+    position: absolute;
+    left: 855px;
+    top:20px;
+    font-size: 2.7rem;
+}
+
+.logo{
+    position: absolute;
+    right: 821px;
+}
+
+.dropdown-sub-menu1{
+    width: 13.1rem;
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.235);
+    z-index: 100;
+    top:16rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown-sub-menu2{
+    width: 16.4rem;
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.235);
+    z-index: 100;
+    top:16rem;
+    opacity: 0;
+    visibility: hidden;
+   
+}
+
+.nav-list li:hover .dropdown-sub-menu1{
+ 
+    top:5.7rem;
+    opacity: 1;
+    line-height: 5em;
+    opacity:2;
+    visibility: visible;
+  
+}
+
+.nav-list li:hover .dropdown-sub-menu2{
+    top:5.7rem;
+    opacity: 1;
+    line-height: 5em;
+    visibility: visible;
+}
+
+/* ESTILIZAÇÃO DOS LINKS DO MENU  */
+
+.ion-md-arrow-dropdown{
+    color:white;
+    font-size: 18px;
+}
+
+.link-style{
+    transition: 0.2s ;
+}
+
+
+.link-style:hover{
+    color:white;
+    border-top: 8px solid white;
+    background-color: rgba(29, 25, 163, 0.235);
+    
+}
+
+.static-style-destaques{
+    color:white;
+    background-color:rgba(29, 25, 163, 0.235);
+    border-top: 8px solid white;
+
+}
+
+.link-style{
+    border-top: 8px solid #35b79c;
+    background-color: rgba(255, 255, 255, 0.235);
+ 
+}
+
+a{
+    display: flex;
+    justify-content: center;
+}
+
+.static-style-destaques{
+    display:flex;
+    justify-content:center;
+}
+
+.dropdown-sub-menu1{
+    background-color:rgb(21 22 45 / 44%);
+     border-bottom: 4px solid white;
+    
+}
+
+.dropdown-sub-menu2{
+    border-bottom:4px solid;
+}
+
+.dropdown-sub-menu2{
+    background-color:rgb(21 22 45 / 44%);
+}
+
+ul .style-sub-menu{
+    transition: 0.1s;
+}
+
+ul .style-sub-menu:hover{
+    color:#35b79c;
+}
+
+.ion-ios-cart:hover{
+    color:#35b79c;
+}
+
+.ion-md-contact:hover{
+    color:#35b79c;
+}
+
+footer{
+    position: absolute;
+    background-color: #35b79c;
+    min-width: 100%;
+    height: 18em;    
+}
+
+/* Descrição de Produto */
+
+.containerc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    margin-top: 0.3px;
+}
+
+.lista-produtos{
+   padding: 3em;
+}
+
+.lista-produtos .carta{
+    background-color:rgba(255, 255, 255, 0.235);
+    border-bottom: 4px solid white;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 10px 5px rgb(21 22 45 / 44%) ;
+    text-align: center;
+}
+
+.carta .titulo {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+section .imagem{
+    position: absolute;
+    top:0;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.carta .descricao{
+   text-align: center;
+   margin: 2em;
+   margin-bottom: 0.5em; 
+   font-size: 2px;            /* em - relacionado com o tamanho da fonte */
+}
+
+.comprar{
+    position: absolute;
+    transform: translate(10%,-220%);
+    font-size: 6em;
+    background-color: #35b79c;
+    border-radius: 100%;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.comprar{
+    background-color:rgba(255, 255, 255, 0.235);
+    border-top: 14px solid #35b79c;
+}
+
+.comprar:hover{
+    border-top: 14px solid white;
+}
+
+.preco{
+    text-align: center;
+    margin: 2em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 2px;
+}
+
+.align-center{
+    text-align: center;
+}
+
+/* Footer */
+
+footer p{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    transform: translateY(580%);
+}
+
+.game-media{
+    display: flex;
+    padding-left: 20em;
+    padding-top: 4em;
+ 
+}
+
+.ion-logo-xbox{
+    font-size: 4em;
+}
+
+.ion-logo-playstation{
+    font-size: 4em;
+}
+
+.ion-logo-apple{
+    font-size: 4em;
+}
+
+.ion-logo-steam{
+    font-size: 4em;
+}
+
+.ion-logo-windows{
+    font-size: 4em;
+}
+
+.ion-logo-xbox{
+    color:#107C10;
+}
+
+.ion-logo-playstation{
+    color:rgb(29, 29, 157);
+}
+
+.ion-logo-windows{
+    color:#1DA1F2;
+}
+
+.ion-logo-steam{
+    color:black;
+}
+.ion-logo-apple{
+    color:#fff;
+}
+
+.social-media{
+    display: flex;
+    padding-left: 124em;
+    
+}
+
+.ion-logo-facebook{
+    font-size: 4em;
+}
+
+.ion-logo-instagram{
+    font-size: 4em;
+}
+
+.ion-logo-twitter{
+    font-size: 4em;
+}
+
+.ion-logo-youtube{
+    font-size: 4em;
+}
+
+.ion-logo-twitch{
+    font-size: 4em;
+}
+
+footer .social-media{
+position: absolute;
+top: 40%;
+right: 15%;
+}
+
+.ion-logo-instagram{
+    color:#C13584;
+    
+}
+
+.ion-logo-facebook{
+    color:	#4267B2;
+}
+
+.ion-logo-twitter{
+    color:#1DA1F2;
+}
+
+.ion-logo-youtube{
+    color: rgb(196, 22, 22);
+}
+
+.ion-logo-twitch{
+    color:rgb(135, 14, 135);
+}
+
+footer .logo{
+    color: white;
+    position: absolute;
+    left: 11.6em;
+}
+
