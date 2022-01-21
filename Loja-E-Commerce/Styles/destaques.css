@@ -338,8 +338,9 @@ main .comprar{
     font-size: 1em;
 }
 
-
-
+.move a{
+    font-size: 1em;
+}
 
 
 main .oculos-vr-container:hover{
