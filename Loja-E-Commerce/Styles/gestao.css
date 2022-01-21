@@ -1,3 +1,4 @@
+/*----------------------------------------------- BACKGROUND--------------------------------------------------------------------------------------------------- */
 *{
     margin: 0%;
     padding: 0%;
@@ -19,79 +20,351 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 150vh;
+    height: 100vh;
 }
 
-body{
-    background-color: #e6e6e6;
-}
+/*----------------------------------------------------------------------- MAIN SECTION COM A GESTÃO DA CONTA --------------------------------------------------------------- */
 
-.card{
-    width: 400px;
-    margin: 75px auto 0;
-    background-color: white;
-    box-shadow: 0 3px 30px rgba(0, 0, 0, .14);
-    color: #444;
-    text-align: center;
-    font-size: 16px;
-}
-
-#card-header{
-    position: relative;
-    height: 48px;
-}
-
-#card-header img{
-    width: 96px;
-    height: 96px;
-    border-radius: 1000px;
+main .gestao-container{
+    background-color:rgba(0, 0, 0, 0.538);
+    width: 50em;
+    height: 70em;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 6px solid #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    left: 32%;
+    top:4%;
 }
 
-.card-body{
-    padding: 10px 40px;
+img{
+    border-radius: 50%;
+    width: 20em;
+    position: relative;
+    left: 25%;
 }
 
-.username{
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 10px 0 0;
-}  
 
-.descricao{
-    line-height: 24px;
+/*---------- CONTAINER DO MODAL---------------------------------- */
+
+button{
+    background-color: #35b79c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+    font-size: 1.5em;
+    letter-spacing: 2px;
 }
 
-.social-icon{
-    font-size: 18px;
-    margin: 0 7px;
+button{
+    transition: 0.8s;
 }
 
-.twitter{
-    color: #55acee;
+button:hover{
+    background-color: white;
+    color: #35b79c;
+    opacity: 1;
 }
 
-.youtube{
-    color: #cd201f;
+
+/* para adicionar a mesma width aos butões de sim e não, ou seja para estarem na mesma linha*/
+.yesbtn, .nobtn{
+    float: left;
+    width: 50%;
 }
 
-@media screen and (max-width: 575px){
-    .card{
-        width: 96%;
-    }
-
-    .card .card-body{
-        padding: 10px 20px;
-    }
-
-    .card-footer{
-        padding: 0 10px;
-        display: block;
-        margin-bottom: 5px;
-    }
+/* cor ao botão do sim */
+.yesbtn:hover{
+    background-color: rgb(0, 128, 98);
+    color: white;
 }
+
+/* cor ao botão */
+.nobtn:hover{
+    background-color: red;
+    color: white;
+}
+
+.yesbtn{
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+.nobtn{
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+.container h1, p{
+    font-size: 1.8em;
+    letter-spacing: 2px;
+}
+
+.container h1{
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.container p{
+    font-size: 1.5em;
+
+}
+
+.container .logo{
+    font-size: 3em;
+    color:#35b79c;
+}
+
+/* para centar o contéudo no modal */
+.container{
+    padding: 16px;
+    text-align: center;
+}
+
+/* para o background do modal */
+
+.modal{
+    display: none;
+    position:fixed;
+    z-index: 1; /*para colocar no top o modal*/
+    left: 27%;
+    top:20%;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.538);
+    padding-top:50px;
+    padding-left: 8em;
+    padding:1em;
+
+}
+
+.modal-content{
+   background-color: rgba(255, 255, 255);
+   margin-top :5%;
+   margin-bottom:15%;
+   border:2px solid;
+   width: 80%;
+   position: absolute;
+   left: 8.8%;
+   top: 10%;
+   
+}
+
+/* para o botão de fechar o modal */
+.close-modal{
+    position: absolute;
+    right: 23px;
+    top:7px;
+    font-size: 40px;
+  font-weight: bold;
+  color:white;
+}
+
+
+.close-modal:hover,
+.close-model:focus{
+   background-color:red;
+    padding-right: 6px;
+    padding-left: 6px;
+
+    cursor: pointer;
+}
+
+/* para agrupar o conteudo do fomulário da border box limpando os floats que previamente foram acionados */
+.option-buttons::after{
+    content: "";
+    clear:both;
+    display: table; /*para agrupar a border box com o content dos buttons  */
+}
+.container span,h1,p{
+    color: #35b79c;
+}
+
+form{
+    position: absolute;
+    top: 1%;
+}
+
+/* modal desativar segurança */ 
+
+.second-modal{
+    display: none;
+    position:fixed;
+    z-index: 1; /*para colocar no top o modal*/
+    left: 27%;
+    top:20%;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.538);
+    padding-top:50px;
+    padding-left: 8em;
+    padding:1em;
+
+}
+
+/* para o botão de fechar o modal */
+.close-second-modal{
+    position: absolute;
+    right: 23px;
+    top:7px;
+    font-size: 40px;
+  font-weight: bold;
+  color:white;
+}
+
+
+.close-second-modal:hover,
+.close-model:focus{
+   background-color:red;
+    padding-right: 6px;
+    padding-left: 6px;
+
+    cursor: pointer;
+}
+
+/* modal eliminar conta */
+
+.third-modal{
+    display: none;
+    position:fixed;
+    z-index: 1; /*para colocar no top o modal*/
+    left: 27%;
+    top:20%;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.538);
+    padding-top:50px;
+    padding-left: 8em;
+    padding:1em;
+
+}
+
+/* para o botão de fechar o modal */
+.close-third-modal{
+    position: absolute;
+    right: 23px;
+    top:7px;
+    font-size: 40px;
+  font-weight: bold;
+  color:white;
+}
+
+
+.close-third-modal:hover,
+.close-third:focus{
+   background-color:red;
+    padding-right: 6px;
+    padding-left: 6px;
+
+    cursor: pointer;
+}
+
+.social-media{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap:3px;
+}
+
+.social-media{
+    padding: 9em;
+}
+
+.ion-logo-facebook{
+    font-size: 3em;
+}
+
+.ion-logo-instagram{
+    font-size: 3em;
+}
+
+.ion-logo-twitter{
+    font-size: 3em;
+}
+
+.ion-logo-youtube{
+    font-size: 3em;
+}
+
+.ion-logo-twitch{
+    font-size: 3em;
+}
+
+.ion-logo-facebook:hover{
+    color:	#4267B2;
+}
+
+.ion-logo-instagram:hover{
+    color:#C13584;
+}
+
+.ion-logo-twitter:hover{
+    color:#1DA1F2;
+}
+
+.ion-logo-youtube:hover{
+    color: rgb(196, 22, 22);
+}
+
+.ion-logo-twitch:hover{
+    color:rgb(135, 14, 135);
+}
+
+.social-media{
+    text-align: center;
+}
+
+.line hr{
+    border: 4px solid;
+    width: 55%;
+    position: absolute;
+    left: 22%;
+    top: 34%;
+    color: #35b79c;
+}
+
+.social-media{
+    position: relative;
+    top: 7%;
+}
+
+
+
+.buttons-section{
+    position: relative;
+    top: 10.5%;
+    width: 27.4em;
+    left: 22.2%;
+}
+
+.buttons-section{
+    display: grid;
+    row-gap: 2em;
+}
+
+.logo span{
+    color: #35b79c;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    position: relative;
+    top: 2%;
+    left: 2.5%;
+}
+
+.imagem-perfil{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-perfil{
+    position: relative;
+    right: 23.8%;
+    top: 3%;
+}
+
+
+

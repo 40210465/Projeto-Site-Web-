@@ -11,12 +11,131 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="/Loja-E-Commerce/scripts/destaques.js"></script>
+    <script src="/Loja-E-Commerce/scripts/detail-page.js"></script>
     <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
     <!--Logo Website-->
     <link rel="shortcut icon" href="..\..\Images\Logo\LogoALTESC.png">
 </head>
 <body>
-    <!-- BACKGROUND -->
-    <div class="bg-image"></div>
+   <!-- BACKGROUND -->
+   <div class="bg-image"></div>
+   <!-- MAIN CONTENT COM DETALHE DO ARTIGO E COM A OPÇÃO DE COMPRAR -->
+   <main>
+       <div class="detail-content">
+          <div class="product-image">
+              <div class="container-zoom-images"></div>
+              <img class="PS5-image" src="/Loja-E-Commerce/Images/PRODUTOS/DESTAQUES/ps5.png" alt="PS5-product">
+          </div>
+          <div class="product-price">
+              <h2 class="name-product">EXCLUSIVO CONSOLA PLAYSTATION 5</h2>
+              <div class="rating-product">
+              <img src="/Loja-E-Commerce/Images/detail-page/stars-rating.png"/>
+          </div>
+              <div class="price"><h2>PreÇo : 499,49€</h2></div>
+                                                                                          <!--modal é um pop-up window  -->
+              <a href="/Loja-E-Commerce/Navigation-Area/checkout-page/checkout.html"><div onclick="openModalPayout()" class="cart-shop" >COMPRAR</div></a>
+              <div class="logo">ALTESC</div> 
+          </div>
+          <div class="zoom-images">
+              <img   class="zoom-image-1" src="/Loja-E-Commerce/Images/detail-page/PS5-1.jpg" alt="zoom-image-1-vr" width="95" >
+              <img  class="zoom-image-2" src="/Loja-E-Commerce/Images/detail-page/PS5-2.jpg" alt="zoom-image-2-vr" width="95">
+              <img  class="zoom-image-3" src="/Loja-E-Commerce/Images/detail-page/PS5-3.jpg" alt="zoom-image-3-vr" width="95">
+              </div>
+              <div class="zoom"><img src="/Loja-E-Commerce/Images/detail-page/zoom.png" alt="zoom-icon" width="35"></div>
+              <div class="product-description-container">
+                  <div class="heading-title">
+                      <h2>Jogar Não Tem Limites</h2>
+                  </div>
+                  <div class="heading-content">
+                      <p>A consola PS5™ abre-te novas possibilidades de jogo que nunca imaginaste.
+                        Desfruta de um carregamento de jogos quase instantâneo com um SSD ultrarrápido, envolvimento mais profundo com suporte para feedback háptico, gatilhos adaptativos e áudio em 3D, bem como uma nova geração de jogos PlayStation® incríveis.</p>
+                  </div>
+                  <div class="grid-layout-text">
+              
+                  <div class="heading-thunder">
+                      <h2>Velocidade relâmpago</h2>
+                  </div>
+                  <div class="thunder-content">
+                      <p>Aproveita o poder de uma CPU, GPU e SSD personalizados com um sistema de E/S integrado que reescrevem as regras do que uma consola PlayStation® é capaz fazer.
+                    </p>
+                  </div>
+              
+                  <div class="wonderful-games">
+                      <h2>Jogos deslumbrantes</h2>
+                  </div>
+                  <div class="wonderful-games-content">
+                      <p>Deixa-te maravilhar por gráficos incríveis e desfruta das novas funcionalidades da PS5™.</p>
+                  </div>
+                  <div class="imersion-heading">
+                      <h2>Imersão arrebatadora</h2>
+                  </div>
+                  <div class="imersion-content">
+                      <p>Descobre uma experiência de jogo mais imersiva com suporte para feedback háptico, gatilhos adaptativos e tecnologia de áudio em 3D.</p>
+                </div>
+            </div>
+                  <div id="table-specs" class="table-specs">
+                      <table>
+                          <tr class="caracteristicas">
+                              <th class="caracter-content">caracteristicas Físicas</th>
+                              <th class="caracter-content">caracteristicas específicas</th>
+                          </tr>
+                          <tr class="fisica-line2">
+                              <th>Cor <span>Branco</span></th>
+                              <th>Disco Rígido <span>825GB SSD</span></th>
+                          </tr>
+                          <tr class="fisica-line3">
+                            <th>Peso <span>4.5 Kg</span></th>
+                            <th>Memória RAM 16GB GDDR6/256-BIT</th>
+                        </tr>
+                        <tr class="fisica-line4">
+                            <th>Altura <span>104 mm</span></th>
+                            <th>Processador <span>AMD de 8x núcleos Zen 2 a 3.5GHz</span></th>
+                        </tr>
+                        <tr class="fisica-line5">
+                            <th>Largura <span>390 mm</span></th>
+                            <th>Conexões <span>HDMI 2.1</span></th>
+                        </tr>
+                        <tr class="fisica-line6">
+                            <th>Profundidade <span>260 mm</span></th>
+                            <th>Suporte de leitura <span>4K UHD BLU-RAY</span></th>
+                        </tr>
+                        <tr class="ecra">
+                            <th>Resolução do Ecrã <span>4K 120Hz TVs, 8K TVs, VRR</span></th>
+                            <th class="empty"></th>
+                        </tr>
+                      </table>
+                  </div>
+                  <div class="logo">
+                      <i class="ion-logo-playstation"></i>
+                  </div>
+        </div>
+   </main>
+<!-- FOOTER -->
+   <footer>
+      <p class="copyright">COPYRIGHT&copy;2022 ALTESC - ALL RIGHTS RESERVED </p> 
+      <div class="game-media">
+      <a href="#"><span><i class="ion-logo-xbox"></i></span></a>
+      &ensp;&ensp;&ensp;
+      <a href="#"><span><i class="ion-logo-playstation"></i></span></a>
+      &ensp;&ensp;&ensp;
+      <a href="#"><span><i class="ion-logo-apple"></i></span></a>
+      &ensp;&ensp;&ensp;
+      <a href="#"><span><i class="ion-logo-steam"></i></span></a>
+      &ensp;&ensp;&ensp;
+      <a href="#"><span><i class="ion-logo-windows"></i></span></a>
+  </div>
+  <div class="social-media">
+      <a href="#"><span><i class="ion-logo-facebook"></i></span></a>
+      &ensp;&ensp;&ensp;
+      <a href="#"><span><i class="ion-logo-instagram"></i></span></a>
+      &ensp;&ensp;&ensp;
+      <a href="#"><span><i class="ion-logo-twitter"></i></span></a>
+      &ensp;&ensp;&ensp;
+      <a href="#"><span><i class="ion-logo-youtube"></i></span></a>
+      &ensp;&ensp;&ensp;
+      <a href="#"><span><i class="ion-logo-twitch"></i></span></a>
+  </div>
+  <div class="logo">ALTESC</div>
+   </footer>
+
 </body>
