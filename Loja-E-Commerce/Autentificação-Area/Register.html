@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/Loja-E-Commerce/fonts-fontes-da-tipografia/register-fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="..\Images\Logo\LogoALTESC.png">
     <script src="../scripts/register.js"></script>
 
 </head>
@@ -22,32 +23,32 @@
     <div class="bg-image"></div>
     <!--MAIN SECTION COM O REGISTER FORM -->
     <main id="register-form" class="register-form">
-        <form action="/Loja-E-Commerce/Navigation-Area/Shop-artigos/destaques.html">
+        <form onsubmit= "return validateRegister();" action="/Loja-E-Commerce/Navigation-Area/Shop-artigos/destaques.html">
         <a class="remove-line-link" href="/Loja-E-Commerce/index.html"><div class="logo">ALTESC</div></a>
             <div class="wrapper">
                 <div class="form">
-                    <div class="inputfield-fname">
+                    <div class="inputfield-fname" id="firstName">
                         <input  class="inputfield-fname"   type="text" placeholder="Primeiro Nome" class="input" required>
                     </div>
-                    <div class="inputfield-lname">
+                    <div class="inputfield-lname" id="lastName">
                         <input class="inputfield-lname"  type="text" placeholder="Último Nome" class="input" required>
                     </div>
-                    <div class="inputfield-psw">
+                    <div class="inputfield-psw" id="passwordR">
                         <input  class="inputfield-psw"  type="password" placeholder="Password" show="*" value="" required>
                     </div>
-                    <div class="inputfield-confirmpsw">
+                    <div class="inputfield-confirmpsw" id="confPassword">
                         <input  class="inputfield-confirmpsw" type="password" placeholder="Confirme Password" show="*" value="" required>
                     </div>
-                    <div class="inputfield-email">
+                    <div class="inputfield-email" id="emailR">
                         <input  class="inputfield-email" type="text" placeholder="Email" required>
                     </div>
-                    <div class="inputfield-phone">
+                    <div class="inputfield-phone" id="phoneNumb">
                         <input  class="inputfield-phone" type="text" placeholder="Contacto" class="input" required>
                     </div>
-                    <div class="inputfield-adress">
+                    <div class="inputfield-adress" id="addressR">
                         <input  class="inputfield-adress" type="text" placeholder="Endereço" class="input" required>
                     </div>
-                    <div class="inputfield-zip">
+                    <div class="inputfield-zip" id="codPostal">
                         <input  class="inputfield-zip" type="text" placeholder="Código Postal" class="input" required>
                     </div>
                     <div class="inputfield">

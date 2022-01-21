@@ -1,41 +1,94 @@
-// Vasco coloca aqui a interatividade com o register form mensagem de sucesso de autentificação ou de erro
+function validateFirstName(){
+    let firstName= document.getElementById("firstName").value
+    let nameFormat= /^[A-Za-z]+$/   //Só aceita letras, quer sejam maiúsculas ou minúsculas
+    if (!(firstName.match(nameFormat))){
+        alert("Formato Inválido Primeiro Nome")
+        document.getElementById("firstName").focus()
+        return false
+    } 
+    return true
+}
 
+function validateLastName(){
+    let lastName= document.getElementById("lastName").value
+    let nameFormat= /^[A-Za-z]+$/
+    if(!(lastName.match(nameFormat))){
+        alert("Formato Inválido Último Nome")
+        document.getElementById("lastName").focus()
+        return false
+    }
+    return true
+}
+function validatePassword(){
+    let password= document.getElementById("passwordR").value
+    let passFormat= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d].\S{8,36}$/    //Entre 8 e 36 caracteres; pelo menos uma letra maúscula, uma minúscula e um número(/d), apenas pode conter letras e números
+    if (!(password.match(passFormat))){
+        alert("Password Deve Conter Entre 8 e 36 Caracteres; Pelo Menos Uma Letra Maiúscula, Uma Minúscula e Um Número, e Apenas Pode Conter Letras e Números")
+        document.getElementById("passwordR").focus()
+        return false
+    }
+    return true
+}
 
+function confPassword(){
+    let password= document.getElementById("passwordR").value
+    let confPassword= document.getElementById("confPassword").value
+    if (password != confPassword){
+        alert("Passwords Não Correspondem")
+        document.getElementById("confPassword").focus()
+        return false
+    }
+    return true
+}
 
-// REGRAS PARA OS CAMPOS DE PREENCHIMENTO
-// OS CAMPOS DE PREENCHIMENTO JÁ SÃO OBRIGATÓRIOS MAS TÊM DE ESTAR FUNCIONAIS :
-// NOS CAMPOS:
-// PRIMEIRO NOME = SÓ ACEITAR LETRAS(strings) CASO CONTRÁRIO SURGIR MENSAGEM DE ERRO "CAMPO INVÁLIDO" NO RESPETIVO INPUT !!
-// ULTIMO NOME = SÓ ACEITAR LETRAS(strings) CASO CONTRÁRIO SURGIR MENSAGEM DE ERRO "CAMPO INVÁLIDO" NO RESPETIVO INPUT !!
-// PASSWORD =  DEFINIR UM LIMITE MÍNIMO DE STRINGS(opcional)
-// CONFIRME PASSWORD = TEM DE CORRESPONDER(MATCH) A PASSWORD INSERIDA CASO CONTRÁRIO SURGIRÁ UMA MENSAGEM DE ERRO "Diferente!!"
-// Email = SÓ ACEITAR CASO CONTENHA @ CASO CONTRÁRIO SURGIRÁ MENSAGEM DE ERRO "CAMPO INVÁLIDO" NO RESPETIVO INPUT !!
-// CONTACTO = SÓ ACEITAR INTEIROS CASO CONTRÁRIO SURGIR MENSAGEM DE ERRO "CAMPO INVÁLIDO" NO RESPETIVO INPUT !!
-// ENDEREÇO = SÓ ACEITAR LETRAS(STRINGS)  CASO CONTRÁRIO  SURGIR MENSAGEM DE ERRO "CAMPO INVÁLIDO" NO RESPETIVO INPUT !!
-// CÓDIGO POSTAL = SÓ ACEITAR INTEIROS  SURGIR MENSAGEM DE ERRO "CAMPO INVÁLIDO" NO RESPETIVO INPUT !!
+function validatePhone(){
+    let phoneNumber= document.getElementById("phoneNumb").value
+    let numberFormat= /^[0-9]+$/     //Ou ^\d+$ Apenas aceita números
+    if(!(phoneNumber.match(numberFormat))){
+        alert("Formato Inválido Contacto. Use Apenas Números")
+        document.getElementById("phoneNumb").focus()
+        return false
+    }
+    return true
+}
 
-// AO CLICAR NO BUTTON REGISTER SURGIRÁ UMA MENSAGEM DE SUCESSO (POP-UP) "BEM-VINDO A ALTESC!!" CASO OS CAMPOS SEJAM VÁLIDOS
+function validateAddress(){
+    let address= document.getElementById("addressR").value
+    let addressFormat= /^[a-zA-Z0-9\s,'-]*$/
+    if(!(address.match(addressFormat))){
+        alert("Formato Inválido Endereço")
+        document.getElementById("addressR").focus()
+        return false
+    }
+    return true
+}
 
+function validateCodPostal(){
+    let codPostal= document.getElementById("codPostal").value
+    let codPostalFormat= /\d{4}([\-]\d{3})?/
+    if(!(codPostal.match(codPostalFormat))){
+        alert("Formato Inválido Código Postal")
+        document.getElementById("codPostal").focus()
+        return false
+    }
+    return true
+}
 
+function validateEmail(){
+    let email= document.getElementById("emailR").value
+    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    if (!(email.match(mailformat))){
+        alert("Formato Inválido")
+        document.getElementById("emailR").focus()
+        return false
+    }
+    return true
+}
 
-
-// Dados guardados na local storage após o registro
-
-// DEIXO AQUI UM RECURSO ONLINE QUE TE POSSA AJUDAR MAIS AJUDA DO TEU PAI CLARO 
-// https://www.youtube.com/watch?v=GTMEuHxh8aQ
-// https://www.youtube.com/watch?v=rsd4FNGTRBw
-
-// Se conseguires armazenar dados de um input no armazenamento local e restaura-lo no carregamento da página agradecia tens aí links no qual te possa ajudar nessa tarefa
-// PS poderás fazê-lo com localStorage com JS 
-
-// https://www.ti-enxame.com/pt/javascript/como-salvar-dados-de-um-formulario-com-armazenamento-local-em-html5/1073245592/
-// https://www.youtube.com/watch?v=i04nMOowrII 
-
-
-
-// BOM TRABALHO E APROVEITAS E ESTUDAS PARA O TESTE DE TW COM JS !!
-
-//  limpa as intruções todas e deixa só os comentários no código, naquilo que fores fazer 
-
-
-
+function validateRegister(){
+    if(validateFirstName() && validateLastName() && validateAddress() &&  validatePassword() && confPassword() && validatePhone() && validateCodPostal() && validateEmail()){
+        alert("Bem Vindo à ALTESC!!!")
+        return true
+    }
+    return false
+}
