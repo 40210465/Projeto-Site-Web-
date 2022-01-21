@@ -41,16 +41,21 @@ function addArtigo1() {
     sessionStorage.clear()
 	sessionStorage.setItem("artigo1",1);
   document.getElementById("lblCartCount").innerHTML=sessionStorage.length;
+  alert("Item Introduzido ao Carrinho")
 }
 
 function addArtigo2() {
 	sessionStorage.setItem("artigo2",1);
   document.getElementById("lblCartCount").innerHTML=sessionStorage.length;
+  alert("Item Introduzido ao Carrinho")
+
 }
 
 function addArtigo3() {
 	sessionStorage.setItem("artigo3",1);
   document.getElementById("lblCartCount").innerHTML=sessionStorage.length;
+  alert("Item Introduzido ao Carrinho")
+
 }
 
 
