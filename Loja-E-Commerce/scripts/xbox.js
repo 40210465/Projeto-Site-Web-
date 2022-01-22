@@ -5,6 +5,7 @@ function addArtigo1() {
 }
 
 function addArtigo2() {
+  
 	sessionStorage.setItem("artigo2",1);
   document.getElementById("lblCartCount").innerHTML=sessionStorage.length;
 }
@@ -15,7 +16,6 @@ function addArtigo3() {
 }
 
 function addArtigo4() {
-    sessionStorage.clear()
 	sessionStorage.setItem("artigo4",1);
   document.getElementById("lblCartCount").innerHTML=sessionStorage.length;
 }
